@@ -1,6 +1,7 @@
 # The Site Configuration
 plugins:
   - jekyll-polyglot
+  - jekyll-seo-tag
 # Import the theme
 theme: jekyll-theme-chirpy
 
