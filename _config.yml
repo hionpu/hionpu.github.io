@@ -1,12 +1,13 @@
 # The Site Configuration
-
+plugins:
+  - jekyll-polyglot
 # Import the theme
 theme: jekyll-theme-chirpy
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-languages: ['ja', 'ko', 'en']
+languages: ['ko', 'en']
 default_lang: 'ko'
 exclude_from_localization: ['javascript', 'images', 'css']
 parallel_localization: false
@@ -195,6 +196,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-
-plugins:
-  - jekyll-polyglot 
