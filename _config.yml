@@ -1,7 +1,7 @@
-title: "Affiliates"
-email: wowthemesnet@gmail.com
-timezone: UTC
-baseurl: "/affiliates-jekyll-theme"
+title: "HionpuLab"
+email: parkpark011@gmail.com
+timezone: Asia/Seoul
+baseurl: ''
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
@@ -19,7 +19,7 @@ kramdown:
     disable: true
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: "compressed"
 ganalytics: UA-113961478-1
 
 # Authors
