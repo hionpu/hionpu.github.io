@@ -1,5 +1,5 @@
 ---
-lang: en
+lang: ko
 permalink: /posts/Deadlock
 title: Deadlock
 categories:
@@ -7,7 +7,7 @@ categories:
 tag:
 ---
 
-
+한글컨텐츠입니다
 A deadlock is a situation in computer science where two or more processes (or threads) are unable to proceed because each is waiting for the other to release a resource. Deadlocks are a common issue in concurrent programming, where multiple processes are executed in parallel and need to interact with shared resources. Here's a more detailed explanation:
 
 1. **Conditions for Deadlock**: There are four conditions that must be present simultaneously for a deadlock to occur, often referred to as the Coffman conditions:
