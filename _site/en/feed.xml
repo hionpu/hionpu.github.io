@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>A minimal, responsive and feature-rich Jekyll theme for technical writing.</description>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/en/feed.xml" rel="self" type="application/rss+xml" />
+	<lastBuildDate>Mon, 04 Dec 2023 00:00:00 +0900</lastBuildDate>
+	
+	<item>
+		<title>멀티스레딩과 async의 (포함)관계</title>
+        
+        
+            <description>&lt;p&gt;Then using task and async/await(TAP) is kind of multithreading? I want to know the relationship like one is subset of another.&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 04 Dec 2023 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/posts/multithreading_vs_async-relation_or_inclusion/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/multithreading_vs_async-relation_or_inclusion/</guid>
+      </item>
+    
+	<item>
+		<title>Jekyll polyglot 에러 처리</title>
+        
+        
+            <description>&lt;h1 id=&quot;polyglot-의존성-문제&quot;&gt;Polyglot 의존성 문제&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/hionpu/hionpu.github.io/assets/111286364/c9f5de67-c2b2-45e1-9bfd-00c92524ac97&quot; alt=&quot;image&quot; /&gt;
+위와 같은 에러가 발생했는데&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 04 Dec 2023 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/posts/Jekyll_polyglot_Error</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/Jekyll_polyglot_Error</guid>
+      </item>
+    
+	<item>
+		<title>2023-12-04-Github 블로그 개설하기(1) 리포지터리 생성하기</title>
+        
+        
+            <description>&lt;p&gt;| 표 |ㅇㅇ |
+| — | — |
+***&lt;/p&gt;
+&lt;h1 id=&quot;1-repository-생성&quot;&gt;1. Repository 생성&lt;/h1&gt;
+</description>
+        
+        <pubDate>Mon, 04 Dec 2023 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/posts/Github-blog(1)/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/Github-blog(1)/</guid>
+      </item>
+    
+	<item>
+		<title>Deadlock</title>
+        
+        
+            <description>&lt;p&gt;A deadlock is a situation in computer science where two or more processes (or threads) are unable to proceed because each is waiting for the other to release a resource. Deadlocks are a common issue in concurrent programming, where multiple processes are executed in parallel and need to interact with shared resources. Here’s a more detailed explanation:&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 04 Dec 2023 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/posts/Deadlock</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/Deadlock</guid>
+      </item>
+    
+  </channel>
+</rss>

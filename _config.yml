@@ -19,7 +19,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: HionpuLab # the main title
+title: Hionpu Lab # the main title
 
 tagline: A text-focused Jekyll theme # it will display as the sub-title
 
