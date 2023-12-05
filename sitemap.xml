@@ -3,23 +3,14 @@ layout: null
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
-  <!-- URL for the post in its original language -->
-  <url>
-    <loc>{{ site.url }}{{ post.url | remove: 'index.html' }}</loc>
-    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- URLs for the post in other languages -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {% for lang in site.languages %}
-  {% if post.translations contains lang %}
+  {% for post in site.posts %}
+  {% if post.lang == lang %}
   <url>
-    <loc>{{ site.url }}/{{ lang }}{{ post.url | remove: 'index.html' }}</loc>
+    <loc>{% if lang == site.default_lang %}{{ post.url | absolute_url }}{% else %}{{ post.url | prepend: lang | prepend: '/' | absolute_url }}{% endif %}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   {% endif %}
