@@ -4,12 +4,16 @@ layout: null
 
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for lang in site.languages %}
   {% for post in site.posts %}
+  {% for lang in site.languages %}
   {% assign post_lang = post.lang | default: site.default_lang %}
   {% if post_lang == lang %}
   <url>
+    {% if lang == site.default_lang %}
+    <loc>{{ site.url }}{{ post.url | remove: 'index.html' }}</loc>
+    {% else %}
     <loc>{{ site.url }}/{{ lang }}{{ post.url | remove: 'index.html' }}</loc>
+    {% endif %}
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
