@@ -3,8 +3,8 @@
   <channel>
     <title></title>
     <description>A minimal, responsive and feature-rich Jekyll theme for technical writing.</description>
-    <link>http://localhost:4000</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://hionpu.github.io</link>
+    <atom:link href="https://hionpu.github.io/feed.xml" rel="self" type="application/rss+xml" />
 	<lastBuildDate>Mon, 04 Dec 2023 00:00:00 +0900</lastBuildDate>
 	
 	<item>
@@ -15,8 +15,8 @@
 </description>
         
         <pubDate>Mon, 04 Dec 2023 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/posts/multithreading_vs_async-relation_or_inclusion/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/multithreading_vs_async-relation_or_inclusion/</guid>
+        <link>https://hionpu.github.io/posts/multithreading_vs_async-relation_or_inclusion/</link>
+        <guid isPermaLink="true">https://hionpu.github.io/posts/multithreading_vs_async-relation_or_inclusion/</guid>
       </item>
     
 	<item>
@@ -29,8 +29,8 @@
 </description>
         
         <pubDate>Mon, 04 Dec 2023 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/posts/Jekyll_polyglot_Error</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/Jekyll_polyglot_Error</guid>
+        <link>https://hionpu.github.io/posts/Jekyll_polyglot_Error</link>
+        <guid isPermaLink="true">https://hionpu.github.io/posts/Jekyll_polyglot_Error</guid>
       </item>
     
 	<item>
@@ -44,8 +44,8 @@
 </description>
         
         <pubDate>Mon, 04 Dec 2023 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/posts/Github-blog(1)/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/Github-blog(1)/</guid>
+        <link>https://hionpu.github.io/posts/Github-blog(1)/</link>
+        <guid isPermaLink="true">https://hionpu.github.io/posts/Github-blog(1)/</guid>
       </item>
     
 	<item>
@@ -57,8 +57,8 @@ A deadlock is a situation in computer science where two or more processes (or th
 </description>
         
         <pubDate>Mon, 04 Dec 2023 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/posts/Deadlock</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/Deadlock</guid>
+        <link>https://hionpu.github.io/posts/Deadlock</link>
+        <guid isPermaLink="true">https://hionpu.github.io/posts/Deadlock</guid>
       </item>
     
   </channel>

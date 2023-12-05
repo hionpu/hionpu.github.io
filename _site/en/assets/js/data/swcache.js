@@ -42,7 +42,7 @@ const resource = [
 const allowedDomains = [
   
 
-  'localhost:4000',
+  'hionpu.github.io',
 
   
     'chirpy-img.netlify.app',
