@@ -1,5 +1,4 @@
-name: Jekyll site CI
-
+name: Not use
 on:
   push:
     branches: [ "site" ]
