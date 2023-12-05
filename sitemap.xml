@@ -1,19 +1,32 @@
 ---
-layout: null
+layout:
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {% for lang in site.languages %}
-  {% for post in site.posts %}
-  {% if post.lang == lang %}
+
+  {% comment %}<!-- It would be better to use the where_exp filter in the first loop but I dont think the unless expression is supported -->{% endcomment %}
+  {% for node in site.posts %}
+  {% comment %}<!-- very lazy check to see if page is in the exclude list - this means excluded pages are not gonna be in the sitemap at all, write exceptions as necessary -->{% endcomment %}
+  {% unless site.exclude_from_localization contains node.path %}
+  {% comment %}<!-- I am assuming if there's not layout assigned, then not include the page in the sitemap, you may want to change this -->{% endcomment %}
+  {% if node.layout %}
   <url>
-    <loc>{% if lang == site.default_lang %}{{ post.url | absolute_url }}{% else %}{{ post.url | prepend: lang | prepend: '/' | absolute_url }}{% endif %}</loc>
-    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>{% if lang == site.default_lang %}{{ node.url | absolute_url }}{% else %}{{ node.url | prepend: lang | prepend: '/' | absolute_url }}{% endif %}</loc>
   </url>
   {% endif %}
+  {% endunless %}
   {% endfor %}
+
+  {% comment %}<!-- This loops through all site collections including posts -->{% endcomment %}
+  {% for collection in site.collections %}
+  {% for node in site[collection.label] %}
+  <url>
+    <loc>{% if lang == site.default_lang %}{{ node.url | absolute_url }}{% else %}{{ node.url | prepend: lang | prepend: '/' | absolute_url }}{% endif %}</loc>
+  </url>
+  {% endfor %}
+  {% endfor %}
+
   {% endfor %}
 </urlset>
