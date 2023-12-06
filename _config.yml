@@ -122,8 +122,8 @@ baseurl: ""
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
-  syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+  # syntax_highlighter: rouge
+  syntax_highlighter_opts: # rouge options › https://github.com/jneen/rouge#full-options
     css_class: highlight
     # default_lang: console
     span:
@@ -131,6 +131,9 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
+ 
+  input: GFM
+  syntax_highlighter: rouge
 
 collections:
   tabs:
@@ -197,3 +200,4 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
