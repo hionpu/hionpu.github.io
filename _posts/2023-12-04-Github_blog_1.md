@@ -10,6 +10,7 @@ tags:
 categories:
   - "[GitHub, jekyll]"
 ---
+
 # 0. 머릿말
 지난 며칠간 깃허브 페이지 블로그를 만들었다. 블로그 운영을 그냥 티스토리나 구글 블로그스팟으로 하려고 했었는데 다국어 지원을 해내고싶다는 이상한 생각에 사로잡혀서 깃허브 페이지까지 오게 되었다. 
 
@@ -22,7 +23,9 @@ categories:
 3. [포스트 올리기](https://hionpu.com/posts/Github_blog_3) 
 4. [다국어 지원하기](https://hionpu.com/posts/Github_blog_4) 
 5. [사이트맵 생성하기](https://hionpu.com/posts/Github_blog_5) 
+
 ***
+
 # 1. Repository 생성
 
 ### 1-1.

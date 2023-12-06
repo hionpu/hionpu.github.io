@@ -9,60 +9,8 @@
   
   
   <url>
-    <loc>http://localhost:4000/posts/test/</loc>
-    <lastmod></lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  
-  
-  
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/posts/multithreading_vs_async-relation_or_inclusion/</loc>
-    <lastmod></lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  
-  
-  
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/posts/Jekyll_polyglot_Error</loc>
-    <lastmod></lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  
-  
-  
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/posts/Github-blog(1)/</loc>
-    <lastmod></lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  
-  
-  
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/posts/Deadlock</loc>
-    <lastmod></lastmod>
+    <loc>http://localhost:4000/posts/Github_blog_1/</loc>
+    <lastmod>2023-12-06T17:38:00+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -79,60 +27,8 @@
   
   
   <url>
-    <loc>http://localhost:4000/en/posts/test/</loc>
-    <lastmod></lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  
-  
-  
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/en/posts/multithreading_vs_async-relation_or_inclusion/</loc>
-    <lastmod></lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  
-  
-  
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/en/posts/Jekyll_polyglot_Error</loc>
-    <lastmod></lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  
-  
-  
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/en/posts/Github-blog(1)/</loc>
-    <lastmod></lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  
-  
-  
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/en/posts/Deadlock</loc>
-    <lastmod></lastmod>
+    <loc>http://localhost:4000/en/posts/Github_blog_1/</loc>
+    <lastmod>2023-12-06T17:38:00+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

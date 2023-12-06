@@ -1,60 +1,9 @@
 [
   
   {
-    "title": "Test",
-    "url": "/posts/test/",
-    "categories": "",
-    "tags": "",
-    "date": "2023-12-04 00:00:00 +0900",
-    
-
-
-
-
-
-    
-    "snippet": "        private void IntuitiveProcessTargetNodes()        {            foreach (HmSceneNode node in TargetNodes)            {                if (_oldRefPoint == null) _oldRefPoint = _refPoint;     ...",
-    "content": "        private void IntuitiveProcessTargetNodes()        {            foreach (HmSceneNode node in TargetNodes)            {                if (_oldRefPoint == null) _oldRefPoint = _refPoint;                var tempMatrix = operation(_refPoint, _oldRefPoint, node.ModelMatrix);                node.ModelMatrix = tempMatrix;            }        }"
-  },
-  
-  {
-    "title": "멀티스레딩과 async의 (포함)관계",
-    "url": "/posts/multithreading_vs_async-relation_or_inclusion/",
-    "categories": "[C#]",
-    "tags": "",
-    "date": "2023-12-04 00:00:00 +0900",
-    
-
-
-
-
-
-    
-    "snippet": "Then using task and async/await(TAP) is kind of multithreading? I want to know the relationship like one is subset of another.ChatGPTChatGPTUnderstanding the relationship between tasks, async/await...",
-    "content": "Then using task and async/await(TAP) is kind of multithreading? I want to know the relationship like one is subset of another.ChatGPTChatGPTUnderstanding the relationship between tasks, async/await (Task-based Asynchronous Pattern, or TAP), and multithreading can be a bit complex, as they intersect but also have distinct purposes. Here’s a breakdown to help clarify their relationship:Tasks and Task-Based Asynchronous Pattern (TAP)      Tasks (Task and Task&lt;T&gt;): In .NET, a Task represents an asynchronous operation. It could be either I/O-bound (like a network request) or CPU-bound (like a computation-intensive operation). A Task does not necessarily correspond to a new thread. Instead, it represents a unit of work that will be completed at some point in the future.        Async/Await: This is a syntax introduced in C# to make it easier to write and read asynchronous code. The async keyword is used to mark a method as asynchronous, and await is used to mark the suspension point in the method, indicating that the method’s execution can continue when the awaited Task is completed. The async/await pattern simplifies the process of working with Tasks, especially when it comes to chaining asynchronous operations and handling exceptions.  Multithreading      Multithreading: This refers to the ability of a CPU to execute multiple threads concurrently. In the context of .NET, it generally involves the System.Threading namespace. Multithreading is a way to achieve parallelism, where multiple threads are executing code at the same time.        Relationship to Tasks: A Task may or may not use a new thread. For example, an I/O-bound Task (like reading a file or awaiting a web request) does not need to occupy a thread while it waits for the I/O operation to complete. On the other hand, a CPU-bound Task, if run on a thread pool thread (for example, via Task.Run), does involve multithreading.  Understanding the Relationship      Subset: You can think of async/await and Tasks (TAP) as a part of the broader concept of multithreading, but they are not synonymous. TAP is a higher-level abstraction that can leverage multithreading, but it can also accomplish asynchronous operations without creating new threads.        Purpose: The primary goal of async/await and Tasks is to facilitate asynchronous programming, particularly for I/O-bound operations, without necessarily creating new threads. Multithreading, on the other hand, is explicitly about running code on multiple threads simultaneously.        Concurrency vs. Parallelism: Async/await and Tasks often deal with concurrency (managing lots of things at once, like waiting for multiple web requests to return). Multithreading is a form of parallelism (doing lots of things at once), which is a subset of concurrency.        Use Cases:          Use async/await and Tasks when:                  You’re dealing with I/O-bound operations.          You want to improve the responsiveness of your application.          You’re performing CPU-bound operations and want to offload them to a background thread without manually managing threads.                    Use explicit multithreading when:                  You need fine-grained control over threads.          You’re implementing parallel algorithms that benefit from running simultaneously on multiple threads.                    In summary, TAP (async/await and Tasks) is a high-level abstraction that can utilize multithreading but is primarily focused on asynchronous programming. Multithreading is a lower-level concept that’s explicitly about running multiple threads concurrently and is one of the ways to achieve parallelism in your applications."
-  },
-  
-  {
-    "title": "Jekyll polyglot 에러 처리",
-    "url": "/posts/Jekyll_polyglot_Error",
-    "categories": "",
-    "tags": "blog, jekyll, polyglot, error",
-    "date": "2023-12-04 00:00:00 +0900",
-    
-
-
-
-
-
-    
-    "snippet": "Polyglot 의존성 문제위와 같은 에러가 발생했는데(텍스트)  Dependency Error: Yikes! It looks like you don’t have jekyll-polyglot or one of its dependencies installed. In order to use Jekyll as currently configured, you’...",
-    "content": "Polyglot 의존성 문제위와 같은 에러가 발생했는데(텍스트)  Dependency Error: Yikes! It looks like you don’t have jekyll-polyglot or one of its dependencies installed. In order to use Jekyll as currently configured, you’ll need to install this gem. If you’ve run Jekyll with bundle exec, ensure that you have included the jekyll-polyglot gem in your Gemfile as well. The full error message from Ruby is: ‘cannot load such file – jekyll-polyglot’ If you run into trouble, you can find helpful resources at https://jekyllrb.com/help/!  C:/Users/user/.local/share/gem/ruby/3.2.0/gems/jekyll-4.3.2/lib/jekyll/external.rb:70:in `rescue in block in require_with_graceful_fail’: jekyll-polyglot (Jekyll::Errors::MissingDependencyException)polyglot의 의존성 문제로 보인다.다국어 플러그인 - jekyll에서 다국어를 대응하기 위해 사용하는 플러그인을 소개합니다. 다국어 플러그인 jekyll-polyglot의 설치와 설정에 대해서 알아봅니다. (posstree.com)Polyglot으로 다국어 블로그 만들기 (developerlee79.github.io)등의 포스팅에서 알려준 대로gem 'jekyll-polyglot'또는gem install jekyll-polyglot으로 polyglot 플러그인을 설치하고_config.yml 내부에plugins:  - jekyll-polyglot를 작성해주어도 발생했다.gem을 업데이트하고, bundle과 polyglot도 업데이트 해보았지만 고쳐지지 않아서 오류 그대로 GPT한테 물어보았는데 Gemfile을 수정하라고 알려줬다. Gemfile을 편집기로 열고 내부에gem \"jekyll-polyglot\"를 추가했더니 해당 오류는 뜨지 않게 됐는데 다른 오류가 발생했다.(텍스트)  C:/Users/user/.local/share/gem/ruby/3.2.0/gems/jekyll-polyglot-1.7.0/lib/jekyll/polyglot/patches/jekyll/site.rb:215:in `relative_url_regex’: target of repeat operator is not specified: /href=”?\\/((?:(?!.gem)(?!.gemspec)(?!docs)(?!tools)(?!README.md)(?!LICENSE)(?!rollup.config.js)(?!package.json)(?!.sass-cache)(?!.jekyll-cache)(?!gemfiles)(?!Gemfile)(?!Gemfile.lock)(?!node_modules)(?!vendor\\/bundle\\/)(?!vendor\\/cache\\/)(?!vendor\\/gems\\/)(?!vendor\\/ruby\\/)(?!javascript)(?!images)(?!css)(?!ja\\/)(?!ko\\/)(?!en\\/)[^,’“\\s\\/?.]+.?)(?:\\/[^][)(“‘\\s]*)?)”/ (RegexpError)regex = regular expression이고 실제로 site.rb  파일을 편집기로 열어서 해당 부분(215줄)로 가보면def relative_url_regex(disabled = false)  regex = ''  unless disabled    @exclude.each do |x|      regex += \"(?!#{x})\"    end    @languages.each do |x|      regex += \"(?!#{x}\\/)\"    end  end  start = disabled ? 'ferh' : 'href'  %r{#{start}=\"?#{@baseurl}/((?:#{regex}[^,'\"\\s/?.]+\\.?)*(?:/[^\\]\\[)(\"'\\s]*)?)\"}end과 같은 정규식이 포함된 함수가 있는데 이 부분에서 에러가 발생정규식을 잘 모르고 지금 배워서 해결하고 싶지는 않았기 때문에 GPT에게 질문, 직접 수정하라고 지시했더니def relative_url_regex(disabled = false)  regex = ''  unless disabled    @exclude.each do |x|      escaped_x = Regexp.escape(x)      regex += \"(?!#{escaped_x})\"    end    @languages.each do |x|      escaped_x = Regexp.escape(x)      regex += \"(?!#{escaped_x}\\/)\"    end  end  start = disabled ? 'ferh' : 'href'  %r{#{start}=\"?#{@baseurl}/((?:#{regex}[^,'\"\\s/?.]+\\.?)*(?:/[^\\]\\[)(\"'\\s]*)?)\"}end로 수정해주었는데 바뀐 부분은regex += \"(?!#{x})\"와regex += \"(?!#{x}\\/)\"에서 그냥 x 가 아닌escaped_x = Regexp.escape(x)regex += \"(?!#{escaped_x})\"처럼 Regexp.escape()를 사용해서 escaped_x로 치환해주었다.에러가 발생한 원인은 (GPT에 의하면) 정규표현식 자체가 원래 까다롭고, 버전이 변경됨에 따라 수정사항을 반영하지 못한것 때문일 수 있다고 한다. 그런데 내가 polyglot 적용을 위해 참고한 포스팅이 2023년 8월경에 작성된 것으로 기억하는데 몇달 사이에 변화가 있던 건가?아무튼 위 수정사항을 적용하니 이번에는 동일한 site.rb  파일의 235번째 줄에서 에러가 발생했다. 생김새를 보니 비슷한 문제인 듯 했고 역시 GPT가 위와 같이 정규표현식을 수정해주었다.수정 전 def absolute_url_regex(url, disabled = false)      regex = ''      unless disabled        @exclude.each do |x|          regex += \"(?!#{x})\"        end        @languages.each do |x|          regex += \"(?!#{x}\\/)\"        end      end      start = disabled ? 'ferh' : 'href'      %r{(?&lt;!hreflang=\"#{@default_lang}\" )#{start}=\"?#{url}#{@baseurl}/((?:#{regex}[^,'\"\\s/?.]+\\.?)*(?:/[^\\]\\[)(\"'\\s]*)?)\"}    end수정 후def absolute_url_regex(url, disabled = false)  regex = ''  unless disabled    @exclude.each do |x|      escaped_x = Regexp.escape(x)      regex += \"(?!#{escaped_x})\"    end    @languages.each do |x|      escaped_x = Regexp.escape(x)      regex += \"(?!#{escaped_x}\\/)\"    end  end  start = disabled ? 'ferh' : 'href'  %r{(?&lt;!hreflang=\"#{@default_lang}\" )#{start}=\"?#{url}#{@baseurl}/((?:#{regex}[^,'\"\\s/?.]+\\.?)*(?:/[^\\]\\[)(\"'\\s]*)?)\"}end적용하고 나니 빌드가 잘 됐고한글컨텐츠와 영어컨텐츠가 한 게시물에서 버전만 달리하여 잘 표시된다.이제 플러그인을 깃헙에서 적용시키고 SEO 최적화를 할 것이다."
-  },
-  
-  {
-    "title": "2023-12-04-Github 블로그 개설하기(1) 리포지터리 생성하기",
-    "url": "/posts/Github-blog(1)/",
-    "categories": "",
+    "title": " GitHub 블로그 개설하기(1) - Repository 생성과 테스트 페이지 확인하기",
+    "url": "/posts/Github_blog_1/",
+    "categories": "[GitHub, jekyll]",
     "tags": "#github, #blog, #jekyll, #polyglot",
     "date": "2023-12-04 00:00:00 +0900",
     
@@ -64,25 +13,8 @@
 
 
     
-    "snippet": "| 표 |ㅇㅇ || — | — |***1. Repository 생성1-1.깃허브 Repositories 탭의 오른쪽에 초록색 New 버튼1-2.소유자 - 본인 고르고 _.github.io_ 형식으로 입력(나는 이미 만들어서 아래 빨간 메시지로 이미 있다고 뜨는것)1-3.Public과 Add a README file 체크하고 아래에 Create Repo...",
-    "content": "| 표 |ㅇㅇ || — | — |***1. Repository 생성1-1.깃허브 Repositories 탭의 오른쪽에 초록색 New 버튼1-2.소유자 - 본인 고르고 _.github.io_ 형식으로 입력(나는 이미 만들어서 아래 빨간 메시지로 이미 있다고 뜨는것)1-3.Public과 Add a README file 체크하고 아래에 Create Repository 초록버튼 클릭2. 내 로컬에 클론2-1.만들어진 Repository에서 오른쪽 초록색 &lt;&gt; Code 버튼 누르면 내 Repository의 Https 주소 확인 가능(주소창에도 있다). 이것을 복사하고 git bash같은 터미널에서 클론할 위치로 이동한 다음git clone 복사한 주소해서 로컬에 클론하면 아까 만든 Repository 이름으로 된 폴더가 생성돼있다. 터미널에서 해당 폴더에 진입하고 임시 테스트용 인덱스 파일을 하나 만들자cd username.github.ioecho \"Hello World\" &gt; index.html3. index.html 푸시하고 확인git add *git commit -m \"Beginning of my git blog\"git push -u origin main이제 https://계정명.github.io 로 들어가면 인덱스에 적은 내용을 볼 수 있다.다음은 테마를 적용해볼 것이다."
-  },
-  
-  {
-    "title": "Deadlock",
-    "url": "/posts/Deadlock",
-    "categories": "[C#, async]",
-    "tags": "",
-    "date": "2023-12-04 00:00:00 +0900",
-    
-
-
-
-
-
-    
-    "snippet": "한글컨텐츠입니다A deadlock is a situation in computer science where two or more processes (or threads) are unable to proceed because each is waiting for the other to release a resource. Deadlocks are a com...",
-    "content": "한글컨텐츠입니다A deadlock is a situation in computer science where two or more processes (or threads) are unable to proceed because each is waiting for the other to release a resource. Deadlocks are a common issue in concurrent programming, where multiple processes are executed in parallel and need to interact with shared resources. Here’s a more detailed explanation:      Conditions for Deadlock: There are four conditions that must be present simultaneously for a deadlock to occur, often referred to as the Coffman conditions:          Mutual Exclusion: At least one resource must be held in a non-sharable mode; that is, only one process can use the resource at any given time.      Hold and Wait: A process must be holding at least one resource and waiting to acquire additional resources that are currently being held by other processes.      No Preemption: Resources cannot be forcibly removed from the processes holding them until the resource is used to completion.      Circular Wait: There must be a circular chain of two or more processes, each of which is waiting for a resource held by the next member in the chain.            Deadlock in Multithreading: In the context of multithreading, a deadlock typically occurs when multiple threads are each waiting for locks or resources held by the other threads. For example, Thread 1 holds Lock A and waits for Lock B, while Thread 2 holds Lock B and waits for Lock A. Neither can proceed because they are each waiting for the other to release a lock.        Deadlock in Asynchronous Programming: In asynchronous programming, deadlocks can occur when synchronous and asynchronous code is mixed improperly. For instance, calling Wait() or Result on a Task in a context that requires the task to complete can lead to deadlock if the completion of the task itself requires that same context to be free (which it isn’t, because it’s blocked waiting for the task to complete).        Avoiding and Resolving Deadlocks: Deadlocks can be avoided by careful programming practices, such as:          Avoiding the hold and wait condition by acquiring all required resources at once.      Using timeouts for resource requests.      Using lock hierarchy or other strategies to prevent circular waits.      In some systems, detecting the deadlock state and taking actions to resolve it, such as aborting and restarting some of the involved processes.      Deadlocks are an important consideration in the design of any concurrent or parallel system, as they can lead to system unresponsiveness or complete standstill. Understanding and addressing the potential for deadlocks is crucial for creating reliable and efficient multi-threaded and asynchronous applications."
+    "snippet": "0. 머릿말지난 며칠간 깃허브 페이지 블로그를 만들었다. 블로그 운영을 그냥 티스토리나 구글 블로그스팟으로 하려고 했었는데 다국어 지원을 해내고싶다는 이상한 생각에 사로잡혀서 깃허브 페이지까지 오게 되었다.티스토리/블로그스팟은 다국어 지원 플러그인이 있긴 하지만 고품질 또는 내가 번역본을 수정하기가 어렵거나 유료인데 이게 싫었던거 같다.진행하면서 중간...",
+    "content": "0. 머릿말지난 며칠간 깃허브 페이지 블로그를 만들었다. 블로그 운영을 그냥 티스토리나 구글 블로그스팟으로 하려고 했었는데 다국어 지원을 해내고싶다는 이상한 생각에 사로잡혀서 깃허브 페이지까지 오게 되었다.티스토리/블로그스팟은 다국어 지원 플러그인이 있긴 하지만 고품질 또는 내가 번역본을 수정하기가 어렵거나 유료인데 이게 싫었던거 같다.진행하면서 중간에 오류가 정보도 없고 해결도 안돼서 아 그냥 티스토리 할까 싶은 때가 꽤 있었는데 GPT를 집요하게 괴롭혀서 결국 해냈다. 단계별로 다음과 같이 진행했고 나는 Chirpy 테마를 사용했기 때문에 다른 테마를 사용하는 경우에 도움이 되지 않을 수도 있다.시리즈 포스트 링크1. Repository 생성과 테스트 페이지 확인하기   Chirpy 테마 적용  포스트 올리기  다국어 지원하기  사이트맵 생성하기1. Repository 생성1-1.깃허브 Repositories 탭의 오른쪽에 초록색 New 버튼1-2.소유자 - 본인 고르고 _.github.io_ 형식으로 입력(나는 이미 만들어서 아래 빨간 메시지로 이미 있다고 뜨는것)1-3.Public과 Add a README file 체크하고 아래에 Create Repository 초록버튼 클릭***2. 내 로컬에 클론2-1.만들어진 Repository에서 오른쪽 초록색 &lt;&gt; Code 버튼 누르면 내 Repository의 Https 주소 확인 가능(주소창에도 있다). 이것을 복사하고 git bash같은 터미널에서 클론할 위치로 이동한 다음git clone 복사한 주소해서 로컬에 클론하면 아까 만든 Repository 이름으로 된 폴더가 생성돼있다. 터미널에서 해당 폴더에 진입하고 임시 테스트용 인덱스 파일을 하나 만들자cd username.github.ioecho \"Hello World\" &gt; index.html3. index.html 푸시하고 확인git add *git commit -m \"Beginning of my git blog\"git push -u origin main이제 https://계정명.github.io 로 들어가면 인덱스에 적은 내용을 볼 수 있다.다음은 테마를 적용해볼 것이다.이어지는 글  Chirpy 테마 적용"
   }
   
 ]
