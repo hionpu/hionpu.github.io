@@ -10,6 +10,7 @@ tags:
 title: Jekyll polyglot 에러 처리
 lang: ko
 permalink: /posts/Jekyll_polyglot_Error
+lastmod: 2023-12-04 15:22
 ---
 # Polyglot 의존성 문제
 ![image](https://github.com/hionpu/hionpu.github.io/assets/111286364/c9f5de67-c2b2-45e1-9bfd-00c92524ac97)
