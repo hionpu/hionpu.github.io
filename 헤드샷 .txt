@@ -1,0 +1,14 @@
+헤드샷 
+스트레이프봇
+마이크로샷
+spheretrack90
+그리드샷
+식스샷
+belowtrack
+scattershot
+스파이더샷
+abovetrack
+dazs - thin gauntlet tracking
+fsa reflexshot
+
+ +exec autoexec -dev +fps_max 240 -eac_launcher_settings SettingsDX12.json +exec autoexec -dev +fps_max 240 -eac_launcher_settings SettingsDX12.jso

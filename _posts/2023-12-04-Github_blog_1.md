@@ -11,40 +11,47 @@ categories:
   - "[GitHub, jekyll]"
 lang: ko
 permalink: /posts/Github_blog_1
-toc: true
+pin: true
+math: true
+mermaid: true
 ---
 
-# 0. 머릿말
+# 머릿말
 지난 며칠간 깃허브 페이지 블로그를 만들었다. 블로그 운영을 그냥 티스토리나 구글 블로그스팟으로 하려고 했었는데 다국어 지원을 해내고싶다는 이상한 생각에 사로잡혀서 깃허브 페이지까지 오게 되었다. 
 
 티스토리/블로그스팟은 다국어 지원 플러그인이 있긴 하지만 고품질 또는 내가 번역본을 수정하기가 어렵거나 유료인데 이게 싫었던거 같다.
 
 진행하면서 중간에 오류가 정보도 없고 해결도 안돼서 아 그냥 티스토리 할까 싶은 때가 꽤 있었는데 GPT를 집요하게 괴롭혀서 결국 해냈다. 단계별로 다음과 같이 진행했고 나는 Chirpy 테마를 사용했기 때문에 다른 테마를 사용하는 경우에 도움이 되지 않을 수도 있다.
-### 시리즈 포스트 링크
-<b><font size = "5">(1) Repository 생성과 테스트 페이지 확인하기 </font ></b>
+
+## 시리즈 포스트 링크
+(1) Repository 생성과 테스트 페이지 확인하기
+
 (2) [Chirpy 테마 적용](https://hionpu.com/posts/Github_blog_2) 
+
 (3) [포스트 올리기](https://hionpu.com/posts/Github_blog_3) 
+
 (4) [다국어 지원하기](https://hionpu.com/posts/Github_blog_4) 
+
 (5) [사이트맵 생성하기](https://hionpu.com/posts/Github_blog_5) 
 
-***
 
-# 1. Repository 생성
 
-### 1-1.
+# Repository 생성
+
+## a
 ![image](https://github.com/hionpu/hionpu.github.io/assets/111286364/cb721c89-9865-4fbc-ae40-ebfbb0e12479)
 깃허브 Repositories 탭의 오른쪽에 초록색 New 버튼
 
-### 1-2.
+## b
 ![image](https://github.com/hionpu/hionpu.github.io/assets/111286364/dd573081-6fca-4e49-91d1-b1695488f991)
 소유자 - 본인 고르고 _<깃허브 계정명>.github.io_ 형식으로 입력(나는 이미 만들어서 아래 빨간 메시지로 이미 있다고 뜨는것)
 
-### 1-3.
+## c
 ![image](https://github.com/hionpu/hionpu.github.io/assets/111286364/76025c67-7d43-4735-9913-b57b0985ab2b)
 Public과 Add a README file 체크하고 아래에 Create Repository 초록버튼 클릭
-***
-# 2. 내 로컬에 클론
-### 2-1.
+
+# 내 로컬에 클론
+## d
 ![image](https://github.com/hionpu/hionpu.github.io/assets/111286364/a229797f-8ae0-460c-ac42-61edcccc0a2d)
 만들어진 Repository에서 오른쪽 초록색 <> Code 버튼 누르면 내 Repository의 Https 주소 확인 가능(주소창에도 있다). 이것을 복사하고 git bash같은 터미널에서 클론할 위치로 이동한 다음
 
@@ -58,8 +65,8 @@ git clone 복사한 주소
 cd username.github.io
 echo "Hello World" > index.html
 ```
-***
-# 3. index.html 푸시하고 확인
+
+# index.html 푸시하고 확인
 ```
 git add *
 git commit -m "Beginning of my git blog"
@@ -71,5 +78,5 @@ git push -u origin main
 다음은 테마를 적용해볼 것이다.
 
 ***
-### 이어지는 글
+# 이어지는 글
 (2) [Chirpy 테마 적용](https://hionpu.com/posts/Github_blog_2) 
