@@ -5,6 +5,12 @@
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/plugin/localizedFormat.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/plugin/relativeTime.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
+
+<!-- Direct script tags for magnificPopup, ClipboardJS, and tocbot -->
+<script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tocbot@4.21.3/dist/tocbot.min.js"></script>
+
 <script>
   dayjs.extend(window.dayjs_plugin_localizedFormat);
   dayjs.extend(window.dayjs_plugin_relativeTime);
@@ -16,16 +22,6 @@
 <!-- layout specified -->
 {% if page.layout == 'post' or page.layout == 'page' or page.layout == 'home' %}
   {% assign urls = urls | append: ',' | append: site.data.origin[type]['lazy-polyfill'].js %}
-
-  {% unless page.layout == 'home' %}
-<!-- image lazy-loading & popup & clipboard -->
-    {% assign urls = urls
-      | append: ','
-      | append: site.data.origin[type]['magnific-popup'].js
-      | append: ','
-      | append: site.data.origin[type].clipboard.js
-    %}
-  {% endunless %}
 {% endif %}
 
 {% if page.layout == 'home'
@@ -35,36 +31,40 @@
   or page.layout == 'tag'
 %}
   {% assign locale = site.lang | split: '-' | first %}
+  {% if locale == nil or locale == empty %}
+    {% assign locale = 'ko' %} <!-- Default locale -->
+  {% endif %}
+  {% assign dayjs_locale_url = 'https://cdn.jsdelivr.net/npm/dayjs@1.11.10/locale/' | append: locale | append: '.min.js' %}
 
   {% assign urls = urls
     | append: ','
-    | append: site.data.origin[type].dayjs.js.common
+    | append: 'https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js'
     | append: ','
-    | append: site.data.origin[type].dayjs.js.locale
-    | replace: ':LOCALE', locale
+    | append: dayjs_locale_url
     | append: ','
-    | append: site.data.origin[type].dayjs.js.relativeTime
+    | append: 'https://cdn.jsdelivr.net/npm/dayjs@1.11.10/plugin/relativeTime.min.js'
     | append: ','
-    | append: site.data.origin[type].dayjs.js.localizedFormat
+    | append: 'https://cdn.jsdelivr.net/npm/dayjs@1.11.10/plugin/localizedFormat.min.js'
   %}
 {% endif %}
 
-{% if page.content contains '<h2' or page.content contains '<h3' and site.toc and page.toc %}
-                                  {% assign urls=urls | append: ',' | append: site.data.origin[type].toc.js %}
-                                  {% endif %}
-                                  {% if page.mermaid %}
-                                  {% assign urls=urls | append: ',' | append: site.data.origin[type].mermaid.js %}
-                                  {% endif %}
-                                  {% include jsdelivr-combine.html urls=urls %}
-                                  {% case page.layout %}
-                                  {% when 'home' , 'categories' , 'post' , 'page' %}
-                                  {% assign js=page.layout %}
-                                  {% when 'archives' , 'category' , 'tag' %}
-                                  {% assign js='misc' %}
-                                  {% else %}
-                                  {% assign js='commons' %}
-                                  {% endcase %}
-                                  {% capture script %}/assets/js/dist/{{js}}.min.js{% endcapture %}
+{% if (page.content contains '<h2' or page.content contains '<h3' ) and site.toc and page.toc %}
+                                   {% assign urls=urls | append: ',' | append: site.data.origin[type].toc.js %}
+                                   {% endif %}
+                                   {% if page.mermaid %}
+                                   {% assign urls=urls | append: ',' | append: site.data.origin[type].mermaid.js %}
+                                   {% endif %}
+                                   {% include jsdelivr-combine.html urls=urls %}
+                                   {% case page.layout %}
+                                   {% when 'home' , 'categories' , 'post' , 'page' %}
+                                   {% assign js=page.layout %}
+                                   {% when 'archives' , 'category' , 'tag' %}
+                                   {% assign js='misc' %}
+                                   {% else %}
+                                   {% assign js='commons' %}
+                                   {% endcase %}
+                                   {% capture script %} /assets/js/dist/{{js}}.min.js{% endcapture %}
+
 <script defer src="{{ script | relative_url }}"></script>
 
 {% if page.math %}
