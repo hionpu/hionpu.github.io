@@ -1,4 +1,5 @@
 <!-- JS selector for site. -->
+
 {% assign urls = site.data.origin[type].jquery.js
   | append: ','
   | append: site.data.origin[type].bootstrap.js
@@ -33,6 +34,12 @@
     | append: ','
     | append: 'https://cdn.jsdelivr.net/npm/dayjs@1.11.10/plugin/localizedFormat.min.js'
   %}
+{% endif %}
+
+
+<!-- Include Mermaid if needed -->
+{% if page.mermaid %}
+  {% assign urls = urls | append: ',' | append: site.data.origin[type].mermaid.js %}
 {% endif %}
 
 <!-- Combine and include scripts -->
