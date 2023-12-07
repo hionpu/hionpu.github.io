@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Hionpu Lab</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-12-07T17:12:23+09:00</updated>
+  <updated>2023-12-07T17:25:09+09:00</updated>
   <author>
     <name>hionpu</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/Github_blog_1" rel="alternate" type="text/html" title=" GitHub 블로그 개설하기(1) - Repository 생성과 테스트 페이지 확인하기" />
     <published>2023-12-04T00:00:00+09:00</published>
   
-    <updated>2023-12-07T13:43:11+09:00</updated>
+    <updated>2023-12-07T17:15:37+09:00</updated>
   
     <id>http://localhost:4000/posts/Github_blog_1</id>
     <content src="http://localhost:4000/posts/Github_blog_1" />
