@@ -10,6 +10,7 @@ tags:
 categories:
   - "[GitHub, jekyll]"
 lang: ko
+permalink: /posts/Github_blog_1
 ---
 
 # 0. 머릿말

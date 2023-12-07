@@ -10,6 +10,7 @@ tags:
 categories:
   - "[GitHub, jekyll]"
 lang: en
+permalink: /posts/Github_blog_1
 ---
 
 # 0. Introduction
