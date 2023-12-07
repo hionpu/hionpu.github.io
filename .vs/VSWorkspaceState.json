@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\_layouts",
-    "\\_sass"
+    "\\assets",
+    "\\assets\\js"
   ],
   "PreviewInSolutionExplorer": false
 }

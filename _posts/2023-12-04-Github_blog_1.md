@@ -9,6 +9,7 @@ tags:
   - "#polyglot"
 categories:
   - "[GitHub, jekyll]"
+lang: ko
 ---
 
 # 0. 머릿말
@@ -18,11 +19,11 @@ categories:
 
 진행하면서 중간에 오류가 정보도 없고 해결도 안돼서 아 그냥 티스토리 할까 싶은 때가 꽤 있었는데 GPT를 집요하게 괴롭혀서 결국 해냈다. 단계별로 다음과 같이 진행했고 나는 Chirpy 테마를 사용했기 때문에 다른 테마를 사용하는 경우에 도움이 되지 않을 수도 있다.
 ### 시리즈 포스트 링크
-<b><font size = "5">1. Repository 생성과 테스트 페이지 확인하기 </font ></b>
-2. [Chirpy 테마 적용](https://hionpu.com/posts/Github_blog_2) 
-3. [포스트 올리기](https://hionpu.com/posts/Github_blog_3) 
-4. [다국어 지원하기](https://hionpu.com/posts/Github_blog_4) 
-5. [사이트맵 생성하기](https://hionpu.com/posts/Github_blog_5) 
+<b><font size = "5">(1) Repository 생성과 테스트 페이지 확인하기 </font ></b>
+(2) [Chirpy 테마 적용](https://hionpu.com/posts/Github_blog_2) 
+(3) [포스트 올리기](https://hionpu.com/posts/Github_blog_3) 
+(4) [다국어 지원하기](https://hionpu.com/posts/Github_blog_4) 
+(5) [사이트맵 생성하기](https://hionpu.com/posts/Github_blog_5) 
 
 ***
 
@@ -69,4 +70,4 @@ git push -u origin main
 
 ***
 ### 이어지는 글
-2. [Chirpy 테마 적용](https://hionpu.com/posts/Github_blog_2) 
+(2) [Chirpy 테마 적용](https://hionpu.com/posts/Github_blog_2) 
