@@ -9,8 +9,8 @@
   
   
   <url>
-    <loc>http://localhost:4000/posts/Github_blog_1</loc>
-    <lastmod>2023-12-06T17:38:00+09:00</lastmod>
+    <loc>http://localhost:4000/posts/GitHub_Blog_2</loc>
+    <lastmod>2023-12-08T14:39:00+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -22,8 +22,8 @@
   
   
   <url>
-    <loc>http://localhost:4000/posts/text-and-typography/</loc>
-    <lastmod></lastmod>
+    <loc>http://localhost:4000/posts/Github_blog_1</loc>
+    <lastmod>2023-12-06T17:38:00+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -33,6 +33,19 @@
 
   
 
+  
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/en/posts/GitHub_Blog_2</loc>
+    <lastmod>2023-12-08T14:39:00+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
   
   
   
@@ -42,19 +55,6 @@
   <url>
     <loc>http://localhost:4000/en/posts/Github_blog_1</loc>
     <lastmod>2023-12-06T17:38:00+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  
-  
-  
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/en/posts/text-and-typography/</loc>
-    <lastmod></lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
