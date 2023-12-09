@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Hionpu Lab</title>
   <subtitle>Hionpu's workspace</subtitle>
-  <updated>2023-12-09T13:13:46+09:00</updated>
+  <updated>2023-12-09T13:35:27+09:00</updated>
   <author>
     <name>hionpu</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/en/posts/Github_blog_2" rel="alternate" type="text/html" title="Setting Up a GitHub Blog (2) - Applying the Chirpy Theme" />
     <published>2023-12-07T16:04:00+09:00</published>
   
-    <updated>2023-12-09T12:57:11+09:00</updated>
+    <updated>2023-12-09T13:14:36+09:00</updated>
   
     <id>http://localhost:4000/posts/Github_blog_2</id>
     <content src="http://localhost:4000/posts/Github_blog_2" />
@@ -78,7 +78,7 @@ After cloning, copy a...
     <link href="http://localhost:4000/en/posts/Github_blog_1" rel="alternate" type="text/html" title="Setting Up a GitHub Blog (1) - Creating a Repository and Checking the Test Page" />
     <published>2023-12-04T15:22:00+09:00</published>
   
-    <updated>2023-12-09T12:57:11+09:00</updated>
+    <updated>2023-12-09T13:14:36+09:00</updated>
   
     <id>http://localhost:4000/posts/Github_blog_1</id>
     <content src="http://localhost:4000/posts/Github_blog_1" />
