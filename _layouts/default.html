@@ -122,7 +122,8 @@ layout: compress
       tocbot.init({
         tocSelector: '#toc',
         contentSelector: 'main',
-        headingSelector: 'h1, h2, h3',
+        headingSelector: 'h1, h2, h3, h4',
+        ignoreSelector: '[data-toc-skip]'
       });
     });
   </script>

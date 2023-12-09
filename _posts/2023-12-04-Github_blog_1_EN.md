@@ -10,7 +10,7 @@ tags:
 categories:
   - "[GitHub, jekyll]"
 lang: en
-permalink: /posts/GB1
+permalink: /posts/Github_blog_1
 pin: true
 math: true
 mermaid: true
@@ -27,9 +27,13 @@ There were times during the process when I encountered errors with no informatio
 # Series Post Links
 
 (1) Create a Repository and Check the Test Page
-(2) [Applying the Chirpy Theme](https://hionpu.com/posts/Github_blog_2)
+
+<font size = "5">(2) [Applying the Chirpy Theme](https://hionpu.com/posts/Github_blog_2)</font>
+
 (3) [How to Upload Posts](https://hionpu.com/posts/Github_blog_3) 
+
 (4) [Make the blog supports multiple languages](https://hionpu.com/posts/Github_blog_4) 
+
 (5) [Creating a Sitemap](https://hionpu.com/posts/Github_blog_5) 
 
 
