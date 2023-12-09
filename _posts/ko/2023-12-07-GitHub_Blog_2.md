@@ -7,7 +7,7 @@ tags:
 date: 2023-12-07 16:04
 lastmod: 2023-12-08 14:39
 lang: ko
-permalink: /posts/GitHub_Blog_2
+permalink: /posts/GB2
 categories:
   - "[GitHub, jekyll]"
 ---

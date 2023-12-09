@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\_layouts"
   ],
-  "SelectedNode": "\\_config.yml.txt",
+  "SelectedNode": "\\_layouts\\post.html",
   "PreviewInSolutionExplorer": false
 }

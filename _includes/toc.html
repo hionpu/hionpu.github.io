@@ -10,7 +10,7 @@
 
 
                                    <h2 class="panel-heading ps-3 pt-2 mb-2">{{- site.data.locales[include.lang].panel.toc -}}</h2>
-                                   <nav id="toc"></nav>
+                                   <div id="toc"></div>
                                    <!-- Language Selection -->
                                    <ul class="nav-lang d-flex" style="margin-right: 3px; margin-bottom: 2px;">
                                      {% for lang in site.languages %}
@@ -22,7 +22,9 @@
 
                                        </a>
                                      </li>
+
                                      {% endfor %}
                                    </ul>
+
                                  </section>
 {% endif %}

@@ -16,73 +16,114 @@ layout: compress
 <html lang="{{ site.alt_lang | default: site.lang }}" {{ prefer_mode }}>
   {% include head.html %}
 
-  <body>
-    {% include sidebar.html lang=lang %}
+<body>
+  {% include sidebar.html lang=lang %}
 
-    <div id="main-wrapper" class="d-flex justify-content-center">
-      <div class="container d-flex flex-column px-xxl-5">
-        {% include topbar.html lang=lang %}
+  <div id="main-wrapper" class="d-flex justify-content-center">
+    <div class="container d-flex flex-column px-xxl-5">
+      {% include topbar.html lang=lang %}
 
-        <div class="row flex-grow-1">
-          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
-            {% if layout.refactor or layout.layout == 'default' %}
-              {% include refactor-content.html content=content lang=lang %}
-            {% else %}
-              {{ content }}
-            {% endif %}
-          </main>
+      <div class="row flex-grow-1">
+        <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
+          {% if layout.refactor or layout.layout == 'default' %}
+          {% include refactor-content.html content=content lang=lang %}
+          {% else %}
+          {{ content }}
+          {% endif %}
+        </main>
 
-          <!-- panel -->
-          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 mb-5 text-muted">
-            <div class="access">
-             
-              {% include_cached update-list.html lang=lang %}
-              {% include_cached trending-tags.html lang=lang %}
-            </div>
+        <!-- panel -->
+        <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 mb-5 text-muted">
+          <div class="access">
 
-            {% for _include in layout.panel_includes %}
-              {% assign _include_path = _include | append: '.html' %}
-              {% include {{ _include_path }} lang=lang %}
-            {% endfor %}
-          </aside>
-        </div>
+            {% include_cached update-list.html lang=lang %}
+            {% include_cached trending-tags.html lang=lang %}
 
-        <div class="row">
-          <!-- tail -->
-          <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
-            {% for _include in layout.tail_includes %}
-              {% assign _include_path = _include | append: '.html' %}
-              {% include {{ _include_path }} lang=lang %}
-            {% endfor %}
-
-            {% include_cached footer.html lang=lang %}
           </div>
-        </div>
 
-        {% include_cached search-results.html lang=lang %}
+          {% for _include in layout.panel_includes %}
+          {% assign _include_path = _include | append: '.html' %}
+          {% include {{ _include_path }} lang=lang %}
+          {% endfor %}
+
+
+        <section id="toc-wrapper" class="ps-0 pe-4">
+
+
+          <!-- Language Selection -->
+          <ul class="nav-lang d-flex" style="margin-right: 3px; margin-bottom: 2px;">
+            {% for lang in site.languages %}
+            {% if page.layout == 'post' %}
+            <li class="nav-item">
+              <a class="nav-link" style="{% if lang == site.active_lang %}font-weight: bold;{% endif %}text-align:center;" href="{% if lang == site.default_lang %}{{ site.baseurl }}{{ page.url }}{% else %}{{ site.baseurl }}/{{ lang }}{{ page.url }}{% endif %}">
+                <a style="{% if lang == site.active_lang %}font-weight: bold;{% endif %}text-align:center;" href="{% if lang == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ lang }}{{page.url}} {% endif %}">
+                  <img src="{{ '/assets/img/flags/' | append: lang | append: '.png' }}" alt="{{ lang }}" style="height: 25px;">
+                </a>
+
+              </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+          <!-- "Contents" Heading for TOC -->
+          <h1 class="panel-heading ps-3 pt-2 mb-2"> Contents </h1>
+          
+          <div id="toc"></div>
+
+        </section>
+
+        </aside>
       </div>
 
-      <aside aria-label="Scroll to Top">
-        <button id="back-to-top" type="button" class="btn btn-lg btn-box-shadow">
-          <i class="fas fa-angle-up"></i>
-        </button>
-      </aside>
+      <div class="row">
+        <!-- tail -->
+        <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+          {% for _include in layout.tail_includes %}
+          {% assign _include_path = _include | append: '.html' %}
+          {% include {{ _include_path }} lang=lang %}
+          {% endfor %}
+
+          {% include_cached footer.html lang=lang %}
+        </div>
+      </div>
+
+      {% include_cached search-results.html lang=lang %}
     </div>
 
-    <div id="mask"></div>
+    <aside aria-label="Scroll to Top">
+      <button id="back-to-top" type="button" class="btn btn-lg btn-box-shadow">
+        <i class="fas fa-angle-up"></i>
+      </button>
+    </aside>
+  </div>
 
-    {% if site.pwa.enabled %}
-      {% include_cached notification.html lang=lang %}
-    {% endif %}
+  <div id="mask"></div>
 
-    <!-- JavaScripts -->
+  {% if site.pwa.enabled %}
+  {% include_cached notification.html lang=lang %}
+  {% endif %}
 
-    {% include js-selector.html %}
+  <!-- JavaScripts -->
+  {% include js-selector.html %}
 
-    {% if page.mermaid %}
-      {% include mermaid.html %}
-    {% endif %}
+  {% if page.mermaid %}
+  {% include mermaid.html %}
+  {% endif %}
 
-    {% include_cached search-loader.html %}
-  </body>
+  {% include_cached search-loader.html %}
+
+  {% if page.layout == 'post' %}
+  <!-- Include tocbot JS and Initialize -->
+  <script src="https://cdn.jsdelivr.net/npm/tocbot/dist/tocbot.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      tocbot.init({
+        tocSelector: '#toc',
+        contentSelector: 'main',
+        headingSelector: 'h1, h2, h3',
+      });
+    });
+  </script>
+  {% endif %}
+</body>
 </html>

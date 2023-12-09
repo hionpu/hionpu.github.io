@@ -10,7 +10,10 @@ tags:
 categories:
   - "[GitHub, jekyll]"
 lang: en
-permalink: /posts/Github_blog_1
+permalink: /posts/GB1
+pin: true
+math: true
+mermaid: true
 ---
 
 # Introduction
@@ -22,14 +25,14 @@ Tistory/Blogspot does have multilingual support plugins, but they are either of 
 There were times during the process when I encountered errors with no information available for resolution, and I thought about just using Tistory. However, I persevered and finally succeeded by persistently consulting GPT. I proceeded in the following steps, and since I used the Chirpy theme, this might not be helpful for those using other themes.
 
 # Series Post Links
-<font size = "5">(1) Create a Repository and Check the Test Page </font >
+
+(1) Create a Repository and Check the Test Page
 (2) [Applying the Chirpy Theme](https://hionpu.com/posts/Github_blog_2)
 (3) [How to Upload Posts](https://hionpu.com/posts/Github_blog_3) 
 (4) [Make the blog supports multiple languages](https://hionpu.com/posts/Github_blog_4) 
 (5) [Creating a Sitemap](https://hionpu.com/posts/Github_blog_5) 
 
 
-***
 
 # 1. Create a Repository
 
@@ -43,7 +46,7 @@ Select yourself as the owner and enter in the format _<your_GitHub_account>.gith
 
 ![image](https://github.com/hionpu/hionpu.github.io/assets/111286364/76025c67-7d43-4735-9913-b57b0985ab2b)
 Check 'Public' and 'Add a README file', then click the green 'Create Repository' button below.
-***
+
 # 2. Clone to Your Local Machine
 
 ![image](https://github.com/hionpu/hionpu.github.io/assets/111286364/a229797f-8ae0-460c-ac42-61edcccc0a2d)
@@ -59,8 +62,9 @@ After cloning to your local machine, you will find a folder with the name of the
 cd username.github.io
 echo "Hello World" > index.html
 ```
-***
+
 # 3. Push 'index.html' and Check
+
 ```
 git add *
 git commit -m "Beginning of my git blog"
@@ -71,6 +75,8 @@ Now, if you go to https://[your account name].github.io, you can see the content
 
 Next, we will apply a theme.
 
-***
+
 # Next Article
+
 (2) [Applying the Chirpy Theme](https://hionpu.com/posts/Github_blog_2)
+

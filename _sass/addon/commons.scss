@@ -160,7 +160,8 @@ i {
   }
 }
 
-/* --- Panels --- */
+/* --- 
+    s --- */
 
 .access {
   top: 2rem;
@@ -190,6 +191,7 @@ i {
 #panel-wrapper {
   /* the headings */
   .panel-heading {
+    font-size: 1.3rem;
     font-family: inherit;
     line-height: inherit;
 
@@ -1106,6 +1108,80 @@ search {
 
   @at-root [#{$sidebar-display}] & {
     display: block !important;
+  }
+}
+
+#toc {
+  border-left: 1px solid rgba(158, 158, 158, 0.17);
+  position: sticky;
+  top: 4rem;
+  transition: top 0.2s ease-in-out;
+  animation: fade-up 0.8s;
+
+  .toc-list {
+    list-style: none;
+   /* font-size: 1rem; */
+    line-height: 1.25;
+    /*padding-left: 0;*/
+
+    .toc-list-item {
+      margin: 0.4rem 0;
+
+      .toc-link-h1 {
+        font-size: 1.3rem; /* Adjust as needed */
+        font-weight: bold; /* Example style */
+      }
+
+      .toc-link-h2 {
+        font-size: 1.2rem;
+        padding-left: 1.5rem; /* Indentation for sub-level */
+      }
+
+      .toc-link-h3 {
+        font-size: 1.1rem;
+        padding-left: 2rem; /* Further indentation for deeper level */
+      }
+
+      .toc-link-h4 {
+        font-size: 1.0rem;
+        padding-left: 2.5rem; /* Further indentation for deeper level */
+      }
+
+
+      .toc-link {
+        padding: 0.2rem 0 0.2rem 1.25rem;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &:hover {
+          color: var(--toc-highlight);
+          text-decoration: none;
+        }
+      }
+    }
+
+    .is-active-link {
+      color: var(--toc-highlight) !important;
+      font-weight: bold;
+    }
+
+    .toc-child {
+      padding-left: 0.75rem;
+    }
+  }
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
