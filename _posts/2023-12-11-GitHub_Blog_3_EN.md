@@ -68,15 +68,15 @@ mermaid: true
 - `permalink:` overrides the global `permalink` setting from \_config.yml.
 - `pin:`, `math:`, `mermaid:` provide additional features. In chirpy theme, posts typically have these set to `true`.
 
-Now, copy and paste the below template, filling in each attribute. I use [Obsidian](https://obsidian.md/) as a markdown editor. Using `{{date}}` and `{{time}}` in the template inputs the timestamp at the time of writing.
+Now, copy and paste the below template, filling in each attribute. I use [Obsidian](https://obsidian.md/) as a markdown editor. Using &#123;&#123;date&#125;&#125; &#123;&#123;time&#125;&#125; in the template inputs the timestamp at the time of writing.
 
 ``` shell
 ---
 title: 
 tags: 
 categories: 
-createdAt: "{{date}} {{time}}"
-lastmod: "{{date}} {{time}}"
+createdAt: {% raw %}{{ date }} {{ time }}{% endraw %}
+lastmod: {% raw %}{{ date }} {{ time }}{% endraw %}
 lang: ko
 permalink: /posts/
 pin: true

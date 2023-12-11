@@ -79,15 +79,15 @@ mermaid: true
 - `permalink:` \_config.yml에서 설정한 전역 `permalink` 속성을 덮어쓰는 속성이다.
 - `pin:`, `math:`, `mermaid:` 각각 부가적인 기능을 제공하는데 chirpy테마에 예시로 딸려온 포스트들에 모두 `true`로 돼있다.
 
-이제 아래 템플릿을 복붙해서 각 속성을 채우자. 나는 마크다운 에디터로 [Obsidian](https://obsidian.md/)을 사용하는데 `{{date}}`와 `{{time}}`을 입력하고 템플릿으로 사용하면 글 생성 당시의 시간으로 타임스탬프처럼 입력된다.
+이제 아래 템플릿을 복붙해서 각 속성을 채우자. 나는 마크다운 에디터로 [Obsidian](https://obsidian.md/)을 사용하는데 &#123;&#123;date&#125;&#125;와 &#123;&#123;time&#125;&#125;을 입력하고 템플릿으로 사용하면 글 생성 당시의 시간으로 타임스탬프처럼 입력된다.
 
 ``` shell
 ---
 title: 
 tags: 
 categories: 
-createdAt: "{{date}} {{time}}"
-lastmod: "{{date}} {{time}}"
+createdAt: {% raw %}{{ date }} {{ time }}{% endraw %}
+lastmod:  {% raw %}{{ date }} {{ time }}{% endraw %}
 lang: ko
 permalink: /posts/
 pin: true
