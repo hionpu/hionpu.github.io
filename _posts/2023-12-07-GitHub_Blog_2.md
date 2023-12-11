@@ -7,7 +7,7 @@ tags:
 date: 2023-12-07 16:04
 lastmod: 2023-12-08 14:39
 lang: ko
-permalink: /posts/Github_blog_2
+permalink: /posts/GitHub_Blog_2
 categories:
   - "[GitHub, jekyll]"
 ---
@@ -106,19 +106,65 @@ Deploy from a branch에 체크되어 있는 것을 GitHub Actions를 눌러 변�
 
 다른거 건들 필요 없이 우측 상단에 Commit changes… 클릭하면 배포 준비 끝
 
-# 7. 푸시해서 자동 빌드, 배포하기
-GitHub Action을 추가해서 리모트 .github 폴더에 파일이 추가됐으므로 
-```shell
-git pull origin main
-```
-한번 해주고
+# 7. \_config.yml 수정 및 리모트 빌드 준비
 
+## pull 받기
+먼저 리모트에서 파일을 수정했으므로(Action을 추가함, .github/workflow 내부에서 수정이 이루어짐) 
+``` shell
+git pull
+```
+버전을 업데이트 한다.
+
+## \*.min.js gitignore 수정
+로컬 루트 폴더에서 .gitignore를 수정해야 하는데
+
+맨 아래 
+```shell
+# Misc
+assets/js/dist
+```
+부분에서 `assets`… 앞에 \#을 붙여서 주석 처리한다.
+
+```shell
+# Misc
+# assets/js/dist
+```
+그래야 npm으로 생성한 \*.min.js 파일들이 정상적으로 푸시될 수 있다.
+
+## \_config.yml 수정
+루트 폴더 내 \_config.yml 파일을 열어서 
+```shell
+url: ""
+```
+"" 안에 \https://username.github.io 본인의 깃허브 주소를 적는다. 나는 hionpu.com 도메인을 사용하고 있어서
+```shell
+url: "hionpu.com"
+```
+을 적었다. 추가적으로 
+```shell
+languages: ['ko', 'en']
+...
+default_lang: 'ko'
+...
+timezone: Asia/Seoul
+...
+title: 블로그 이름
+tagline: 블로그 이름 밑에 들어갈 문장
+description: 블로그 설명
+...
+github:
+	username: 깃허브계정명
+...
+```
+등은 본인에게 맞게 수정해도 좋다. 보통 수정하면 곤란한 부분은 chirpy 원작자가 경고를 해놓았다. 이 \_config.yml은 이후에 다른 설정을 할 때도 수정할 부분이 많다.
+# 8. 푸시해서 자동 빌드, 배포하기
+이제 수정한 파일을 푸시한다.
 ```shell
 git add *
 git commit -m "git blog init"
 git push origin main
 ```
-푸시하면 리모트 repository의 Action 탭에서 빌드와 배포가 되는 것을 확인할 수 있다. 초록불이 들어오면 본인의 블로그 주소(username.github.io)에 들어가서 블로그가 온라인에서 보이는지 확인하자. 
+그러면 리모트 repository의 Action 탭에서 빌드와 배포가 되는 것을 확인할 수 있다. 초록불이 들어오면 본인의 블로그 주소(username.github.io)에 들어가서 블로그가 온라인에서 보이는지 확인하자. 
 
 빨간불이 들어오거나 초록불이 들어왔지만 블로그가 정상 작동하지 않는 경우는 추후에 작성할 에러케이스 모음 포스팅을 참고해서 해결할 수 있도록 할 것이다.
 

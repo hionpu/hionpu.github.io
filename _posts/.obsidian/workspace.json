@@ -1,0 +1,224 @@
+{
+  "main": {
+    "id": "00b19d6ea6f145e3",
+    "type": "split",
+    "children": [
+      {
+        "id": "ee4eb598feb2bdf2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc29ead93baa0e36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "//2023-12-07-GitHub_Blog_2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c81fd2302d0ce209",
+    "type": "split",
+    "children": [
+      {
+        "id": "36899709bd1a8c1e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8168ade95b8798ea",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e52fff583722b1ed",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8e89c0e539873d1f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "229e66340cd17b1e",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 355.5
+  },
+  "right": {
+    "id": "9b93974519c83a85",
+    "type": "split",
+    "children": [
+      {
+        "id": "62bd58f73b928cae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "578ff97bfbd88001",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "//2023-12-07-GitHub_Blog_2.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "947cd52d85f314a4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "//2023-12-07-GitHub_Blog_2.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "db287c59bbdc894c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "de8ca4fc743b9ec7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "//2023-12-07-GitHub_Blog_2.md"
+              }
+            }
+          },
+          {
+            "id": "db7fab83c87f327f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "remotely-save:Remotely Save": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false,
+      "file-tree-alternative:File Tree Alternative Plugin": false,
+      "character-insertion:Insert / switch characters": false
+    }
+  },
+  "active": "bc29ead93baa0e36",
+  "lastOpenFiles": [
+    "//2023-12-07-GitHub_Blog_2_EN.md",
+    "//2023-12-07-GitHub_Blog_2.md",
+    "2023-12-07-GitHub_Blog_2_EN.md",
+    "2023-12-07-GitHub_Blog_2.md",
+    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-07-GitHub_Blog_2.md",
+    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-Github_blog_1.md",
+    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-Jekyll_polyglot_Error_1.md",
+    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-Jekyll_polyglot_Error_EN.md",
+    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-Github_blog_1_EN.md",
+    "999 templates/post.md.md",
+    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-07-GitHub_Blog_2_EN.md",
+    "Pasted image 20231208143014.png",
+    "999 templates/코테 블로깅 템플릿.md",
+    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2019-08-08-text-and-typography.md",
+    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-test.md",
+    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-Deadlock.md",
+    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-Deadlock_EN.md",
+    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-Jekyll_polyglot_Error.md",
+    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-multithreading_vs_async-relation_or_inclusion.md",
+    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/polyglot 및 이후 순서.md",
+    "Blogging/Async/2023-12-04-Deadlock.md",
+    "Pasted image 20231204173001.png",
+    "Work/231026 Rhino 기능 - Intersect(Surface vs. Surface) 구현하기.md",
+    "000 papercut/00017 EventHandler.md",
+    "000 papercut/00006 올바른 예외처리 방법.md",
+    "000 papercut/00002 Clean code Ch.5 형식 맞추기 1.md",
+    "999 templates/1 reference {id}.md",
+    "000 papercut/00003 Fleeting.md",
+    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지",
+    "Blogging/Async/Coroutine vs. async",
+    "Blogging/Async/await",
+    "Blogging/Async",
+    "Pasted image 20231026174204.png",
+    "Pasted image 20231026163724.png",
+    "Pasted image 20231026163033.png",
+    "Pasted image 20231013114623.png",
+    "Pasted image 20231013104648.png",
+    "Pasted image 20231013104438.png",
+    "Pasted image 20231013104423.png",
+    "Pasted image 20231013102935.png",
+    "002 learn/Work/Daily",
+    "Blogging/arc flowchart.drawio",
+    "Work",
+    "002 learn/Work/230822 EgGeoEllipse/Evaluation",
+    "002 learn/Work/230822 EgGeoEllipse",
+    "002 learn/Work",
+    "Untitled 1.canvas",
+    "Untitled.canvas"
+  ]
+}

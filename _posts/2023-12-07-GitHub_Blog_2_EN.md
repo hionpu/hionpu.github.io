@@ -7,12 +7,12 @@ tags:
 date: 2023-12-07 16:04
 lastmod: 2023-12-08 14:39
 lang: en
-permalink: /posts/Github_blog_2
+permalink: /posts/GitHub_Blog_2
 categories:
   - "[GitHub, jekyll]"
 ---
 
-
+---
 # Series Post Links
 (1) [Creating a Repository and Testing the Page](https://hionpu.com/posts/Github_blog_1) 
 
@@ -99,19 +99,64 @@ Go to Settings in your blog's GitHub repository, then to Pages in the left tab, 
 
 After clicking Configure in the box that appears, you don't need to change anything else. Just click Commit changes… in the top right corner to finish the deployment setup.
 
-# 7. Push for Automatic Build and Deployment
-Since GitHub Action was added, new files have been added to the remote .github folder, so first run:
-```shell
-git pull origin main
-```
+# 7. Modify \_config.yml and Prepare for Remote Build
 
-Then:
+## Pull Updates
+First, since modifications have been made remotely (added an Action, changes within .github/workflow), 
+``` shell
+git pull
+```
+is used to update the version.
+
+## Update \*.min.js in .gitignore
+In the local root folder, the .gitignore file needs to be modified.
+
+At the very bottom, 
+```shell
+# Misc
+assets/js/dist
+```
+add a # in front of `assets` to comment it out.
+
+```shell
+# Misc
+# assets/js/dist
+```
+This is necessary so that the \*.min.js files created by npm can be pushed correctly.
+
+## Editing \_config.yml
+Open the \_config.yml file in the root folder and modify 
+```shell
+url: ""
+```
+to include your GitHub page address in the "". For instance, I use the domain hionpu.com, so I wrote
+```shell
+url: "hionpu.com"
+```
+Additionally, you can modify other settings according to your needs, such as
+```shell
+languages: ['ko', 'en']
+...
+default_lang: 'ko'
+...
+timezone: Asia/Seoul
+...
+title: Blog Name
+tagline: Sentence Under the Blog Name
+description: Description of the Blog
+...
+github:
+	username: YourGitHubUsername
+...
+```
+Generally, areas that should not be modified are marked with warnings by the original creator of chirpy. This \_config.yml file will be frequently modified for other settings in the future.
+# 8. Push for Automatic Build and Deployment
 ```shell
 git add *
 git commit -m "git blog init"
 git push origin main
 ```
-to push. You can then see the build and deployment happening in the Actions tab of your remote repository. If you see a green light, check your blog at your address (username.github.io) to see if it's visible online.
+Push changed files. You can then see the build and deployment happening in the Actions tab of your remote repository. If you see a green light, check your blog at your address (username.github.io) to see if it's visible online.
 
 If you see a red light or the blog isn't working properly even with a green light, refer to the upcoming post on error cases for solutions.
 

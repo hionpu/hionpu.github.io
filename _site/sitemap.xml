@@ -9,7 +9,20 @@
   
   
   <url>
-    <loc>http://localhost:4000/posts/Github_blog_2</loc>
+    <loc>http://localhost:4000/posts/GitHub_Blog_3</loc>
+    <lastmod>2023-12-11T15:54:00+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/posts/GitHub_Blog_2</loc>
     <lastmod>2023-12-08T14:39:00+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -40,7 +53,20 @@
   
   
   <url>
-    <loc>http://localhost:4000/en/posts/Github_blog_2</loc>
+    <loc>http://localhost:4000/en/posts/GitHub_Blog_3</loc>
+    <lastmod>2023-12-11T15:54:00+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/en/posts/GitHub_Blog_2</loc>
     <lastmod>2023-12-08T14:39:00+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
