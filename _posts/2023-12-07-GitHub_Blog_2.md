@@ -7,20 +7,20 @@ tags:
 date: 2023-12-07 16:04
 lastmod: 2023-12-08 14:39
 lang: ko
-permalink: /posts/GitHub_Blog_2
+permalink: /posts/github_blog_2
 categories:
   - "[GitHub, jekyll]"
 ---
 # 시리즈 포스트 링크
-(1) [Repository 생성과 테스트 페이지 확인하기](https://hionpu.com/posts/Github_blog_1) 
+(1) [Repository 생성과 테스트 페이지 확인하기](https://hionpu.com/posts/github_blog_1) 
 
 <font size = "5">(2) Chirpy 테마 적용 </font >
 
-(3) [포스트 올리기](https://hionpu.com/posts/Github_blog_3) 
+(3) [포스트 올리기](https://hionpu.com/posts/github_blog_3) 
 
-(4) [다국어 지원하기](https://hionpu.com/posts/Github_blog_4) 
+(4) [다국어 지원하기](https://hionpu.com/posts/github_blog_4) 
 
-(5) [사이트맵 생성하기](https://hionpu.com/posts/Github_blog_5) 
+(5) [사이트맵 생성하기](https://hionpu.com/posts/github_blog_5) 
 
 ***
 
@@ -169,4 +169,4 @@ git push origin main
 빨간불이 들어오거나 초록불이 들어왔지만 블로그가 정상 작동하지 않는 경우는 추후에 작성할 에러케이스 모음 포스팅을 참고해서 해결할 수 있도록 할 것이다.
 
 # 8. 이어지는 다음 글
-(3) [포스트 올리기](https://hionpu.com/posts/Github_blog_3) 
+(3) [포스트 올리기](https://hionpu.com/posts/github_blog_3) 

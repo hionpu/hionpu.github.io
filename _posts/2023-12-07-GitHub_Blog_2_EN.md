@@ -7,22 +7,22 @@ tags:
 date: 2023-12-07 16:04
 lastmod: 2023-12-08 14:39
 lang: en
-permalink: /posts/GitHub_Blog_2
+permalink: /posts/github_blog_2
 categories:
   - "[GitHub, jekyll]"
 ---
 
 ---
 # Series Post Links
-(1) [Creating a Repository and Testing the Page](https://hionpu.com/posts/Github_blog_1) 
+(1) [Creating a Repository and Testing the Page](https://hionpu.com/posts/github_blog_1) 
 
 <font size = "5">(2) Applying the Chirpy Theme </font >
 
-(3) [Uploading Posts](https://hionpu.com/posts/Github_blog_3) 
+(3) [Uploading Posts](https://hionpu.com/posts/github_blog_3) 
 
-(4) [Supporting Multiple Languages](https://hionpu.com/posts/Github_blog_4) 
+(4) [Supporting Multiple Languages](https://hionpu.com/posts/github_blog_4) 
 
-(5) [Creating a Sitemap](https://hionpu.com/posts/Github_blog_5) 
+(5) [Creating a Sitemap](https://hionpu.com/posts/github_blog_5) 
 
 ***
 
@@ -161,4 +161,4 @@ Push changed files. You can then see the build and deployment happening in the A
 If you see a red light or the blog isn't working properly even with a green light, refer to the upcoming post on error cases for solutions.
 
 # 8. Next Article
-(3) [Uploading Posts](https://hionpu.com/posts/Github_blog_3) 
+(3) [Uploading Posts](https://hionpu.com/posts/github_blog_3) 

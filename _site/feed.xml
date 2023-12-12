@@ -8,16 +8,33 @@
 	<lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0900</lastBuildDate>
 	
 	<item>
+		<title>Liquid curly bracket 그대로 표시하기</title>
+        
+        
+            <description>&lt;h1 id=&quot;1-html-문법에서&quot;&gt;1. html 문법에서&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&amp;#38;#123; 
+와
+&amp;#38;#125;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        
+        <pubDate>Mon, 11 Dec 2023 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/posts/liquid_curly_bracket</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/liquid_curly_bracket</guid>
+      </item>
+    
+	<item>
 		<title>GitHub 블로그 개설하기(3) - 포스팅</title>
         
         
             <description>&lt;h1 id=&quot;시리즈-포스트-링크&quot;&gt;시리즈 포스트 링크&lt;/h1&gt;
-&lt;p&gt;(1) &lt;a href=&quot;https://hionpu.com/posts/Github_blog_1&quot;&gt;Repository 생성과 테스트 페이지 확인하기&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(1) &lt;a href=&quot;https://hionpu.com/posts/github_blog_1&quot;&gt;Repository 생성과 테스트 페이지 확인하기&lt;/a&gt;&lt;/p&gt;
 </description>
         
         <pubDate>Mon, 11 Dec 2023 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/posts/GitHub_Blog_3</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/GitHub_Blog_3</guid>
+        <link>http://localhost:4000/posts/github_blog_3</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/github_blog_3</guid>
       </item>
     
 	<item>
@@ -25,12 +42,12 @@
         
         
             <description>&lt;h1 id=&quot;시리즈-포스트-링크&quot;&gt;시리즈 포스트 링크&lt;/h1&gt;
-&lt;p&gt;(1) &lt;a href=&quot;https://hionpu.com/posts/Github_blog_1&quot;&gt;Repository 생성과 테스트 페이지 확인하기&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(1) &lt;a href=&quot;https://hionpu.com/posts/github_blog_1&quot;&gt;Repository 생성과 테스트 페이지 확인하기&lt;/a&gt;&lt;/p&gt;
 </description>
         
         <pubDate>Thu, 07 Dec 2023 16:04:00 +0900</pubDate>
-        <link>http://localhost:4000/posts/GitHub_Blog_2</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/GitHub_Blog_2</guid>
+        <link>http://localhost:4000/posts/github_blog_2</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/github_blog_2</guid>
       </item>
     
 	<item>
@@ -42,8 +59,23 @@
 </description>
         
         <pubDate>Mon, 04 Dec 2023 15:22:00 +0900</pubDate>
-        <link>http://localhost:4000/posts/Github_blog_1</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/Github_blog_1</guid>
+        <link>http://localhost:4000/posts/github_blog_1</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/github_blog_1</guid>
+      </item>
+    
+	<item>
+		<title>Rhino처럼 방향이 있는 arc 그리기</title>
+        
+        
+            <description>&lt;h1 id=&quot;20231212-변경점&quot;&gt;&lt;em&gt;2023/12/12 변경점&lt;/em&gt;&lt;/h1&gt;
+&lt;blockquote class=&quot;prompt-warning&quot;&gt;
+  &lt;p&gt;2023/12/12 기준 리팩토링으로 대부분의 구현 방식을 바꿨다. 순서도는 그대로 사용했다.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        
+        <pubDate>Wed, 11 Oct 2023 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/posts/directional_angle</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/directional_angle</guid>
       </item>
     
   </channel>

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Hionpu Lab</title>
   <subtitle>Hionpu's workspace</subtitle>
-  <updated>2023-12-11T17:10:42+09:00</updated>
+  <updated>2023-12-12T11:06:38+09:00</updated>
   <author>
     <name>hionpu</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,62 @@
 
   
   <entry>
-    <title>Setting Up a GitHub Blog (3) - Upload a Post</title>
-    <link href="http://localhost:4000/en/posts/GitHub_Blog_3" rel="alternate" type="text/html" title="Setting Up a GitHub Blog (3) - Upload a Post" />
+    <title>Liquid curly bracket 그대로 표시하기</title>
+    <link href="http://localhost:4000/en/posts/liquid_curly_bracket" rel="alternate" type="text/html" title="Liquid curly bracket 그대로 표시하기" />
     <published>2023-12-11T00:00:00+09:00</published>
   
     <updated>2023-12-11T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/GitHub_Blog_3</id>
-    <content src="http://localhost:4000/posts/GitHub_Blog_3" />
+    <id>http://localhost:4000/posts/liquid_curly_bracket</id>
+    <content src="http://localhost:4000/posts/liquid_curly_bracket" />
+    <author>
+      <name>hionpu</name>
+    </author>
+
+  
+    
+    <category term="html" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      1. html 문법에서
+
+  &amp;#38;#123; 
+와
+&amp;#38;#125;
+
+
+를 사용하는 것이 가장 편한것 같다. 문제는 코드 블럭 안에 {{ something }} 를 넣어야 할 때이다.
+
+2. .md파일이 html로 변경될 상황에서 코드블럭 내부의 이중 curly bracket
+
+
+
+를 사용하면 된다.
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Setting Up a GitHub Blog (3) - Upload a Post</title>
+    <link href="http://localhost:4000/en/posts/github_blog_3" rel="alternate" type="text/html" title="Setting Up a GitHub Blog (3) - Upload a Post" />
+    <published>2023-12-11T00:00:00+09:00</published>
+  
+    <updated>2023-12-11T17:11:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/github_blog_3</id>
+    <content src="http://localhost:4000/posts/github_blog_3" />
     <author>
       <name>hionpu</name>
     </author>
@@ -75,13 +123,13 @@ When Jekyll builds, it compiles all ...
   
   <entry>
     <title>Setting Up a GitHub Blog (2) - Applying the Chirpy Theme</title>
-    <link href="http://localhost:4000/en/posts/GitHub_Blog_2" rel="alternate" type="text/html" title="Setting Up a GitHub Blog (2) - Applying the Chirpy Theme" />
+    <link href="http://localhost:4000/en/posts/github_blog_2" rel="alternate" type="text/html" title="Setting Up a GitHub Blog (2) - Applying the Chirpy Theme" />
     <published>2023-12-07T16:04:00+09:00</published>
   
     <updated>2023-12-11T16:50:38+09:00</updated>
   
-    <id>http://localhost:4000/posts/GitHub_Blog_2</id>
-    <content src="http://localhost:4000/posts/GitHub_Blog_2" />
+    <id>http://localhost:4000/posts/github_blog_2</id>
+    <content src="http://localhost:4000/posts/github_blog_2" />
     <author>
       <name>hionpu</name>
     </author>
@@ -130,13 +178,13 @@ After cloning, copy ...
   
   <entry>
     <title>Setting Up a GitHub Blog (1) - Creating a Repository and Checking the Test Page</title>
-    <link href="http://localhost:4000/en/posts/Github_blog_1" rel="alternate" type="text/html" title="Setting Up a GitHub Blog (1) - Creating a Repository and Checking the Test Page" />
+    <link href="http://localhost:4000/en/posts/github_blog_1" rel="alternate" type="text/html" title="Setting Up a GitHub Blog (1) - Creating a Repository and Checking the Test Page" />
     <published>2023-12-04T15:22:00+09:00</published>
   
     <updated>2023-12-09T13:14:36+09:00</updated>
   
-    <id>http://localhost:4000/posts/Github_blog_1</id>
-    <content src="http://localhost:4000/posts/Github_blog_1" />
+    <id>http://localhost:4000/posts/github_blog_1</id>
+    <content src="http://localhost:4000/posts/github_blog_1" />
     <author>
       <name>hionpu</name>
     </author>
@@ -160,6 +208,57 @@ After cloning, copy ...
 In the past few days, I’ve created a blog on GitHub Pages. Initially, I considered using Tistory or Google Blogspot for my blog, but I was captivated by the strange idea of wanting to support multiple languages, which led me to GitHub Pages.
 
 Tistory/Blogspot does have multilingual support plugins, but they are either of low quality, difficult to modify translations, or paid, whic...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Drawing Directional Arcs like in Rhino</title>
+    <link href="http://localhost:4000/en/posts/directional_angle" rel="alternate" type="text/html" title="Drawing Directional Arcs like in Rhino" />
+    <published>2023-10-11T00:00:00+09:00</published>
+  
+    <updated>2023-10-11T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/directional_angle</id>
+    <content src="http://localhost:4000/posts/directional_angle" />
+    <author>
+      <name>hionpu</name>
+    </author>
+
+  
+    
+    <category term="[geometry, arc]" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Changes as of 2023/12/12
+
+  As of 2023/12/12, most of the implementation methods have been changed due to refactoring. The flowchart is still used.
+
+
+1. Understanding the Problem
+There are cases where an arc needs to be drawn given three points C, P, Q (center point C and two reference lines CP, CQ).
+​
+
+
+
+
+    Figure 1-1, Arc PQ
+
+
+​
+
+Assuming the center point C and the first reference point P a...
     </summary>
   
 

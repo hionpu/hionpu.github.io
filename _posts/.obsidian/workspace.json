@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "//2023-12-07-GitHub_Blog_2.md",
+                "file": "2023-12-11-GitHub_Blog_3_EN.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "//2023-12-07-GitHub_Blog_2.md",
+                "file": "2023-12-11-GitHub_Blog_3_EN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "//2023-12-07-GitHub_Blog_2.md",
+                "file": "2023-12-11-GitHub_Blog_3_EN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "//2023-12-07-GitHub_Blog_2.md"
+                "file": "2023-12-11-GitHub_Blog_3_EN.md"
               }
             }
           },
@@ -172,10 +172,15 @@
   },
   "active": "bc29ead93baa0e36",
   "lastOpenFiles": [
+    "2023-12-11-GitHub_Blog_3.md",
+    "2023-12-11-Liquid_curly_bracket.md",
+    "2023-12-11-GitHub_Blog_3_EN.md",
+    "2023-12-07-GitHub_Blog_2.md",
+    "2023-12-07-GitHub_Blog_2_EN.md",
+    "2023-12-04-Github_blog_1.md",
+    "2023-12-04-Github_blog_1_EN.md",
     "//2023-12-07-GitHub_Blog_2_EN.md",
     "//2023-12-07-GitHub_Blog_2.md",
-    "2023-12-07-GitHub_Blog_2_EN.md",
-    "2023-12-07-GitHub_Blog_2.md",
     "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-07-GitHub_Blog_2.md",
     "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-Github_blog_1.md",
     "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-Jekyll_polyglot_Error_1.md",
@@ -195,11 +200,6 @@
     "Blogging/Async/2023-12-04-Deadlock.md",
     "Pasted image 20231204173001.png",
     "Work/231026 Rhino 기능 - Intersect(Surface vs. Surface) 구현하기.md",
-    "000 papercut/00017 EventHandler.md",
-    "000 papercut/00006 올바른 예외처리 방법.md",
-    "000 papercut/00002 Clean code Ch.5 형식 맞추기 1.md",
-    "999 templates/1 reference {id}.md",
-    "000 papercut/00003 Fleeting.md",
     "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지",
     "Blogging/Async/Coroutine vs. async",
     "Blogging/Async/await",

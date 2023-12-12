@@ -9,21 +9,21 @@ categories:
 createdAt: 2023-12-11 15:54
 lastmod: 2023-12-11 15:54
 lang: ko
-permalink: /posts/GitHub_Blog_3
+permalink: /posts/github_blog_3
 pin: true
 math: true
 mermaid: true
 ---
 # 시리즈 포스트 링크
-(1) [Repository 생성과 테스트 페이지 확인하기](https://hionpu.com/posts/Github_blog_1) 
+(1) [Repository 생성과 테스트 페이지 확인하기](https://hionpu.com/posts/github_blog_1) 
 
-[(2) Chirpy 테마 적용](https://hionpu.com/posts/Github_blog_2)
+[(2) Chirpy 테마 적용](https://hionpu.com/posts/github_blog_2)
 
 <font size = "5">(3) 포스팅</font >
 
-(4) [다국어 지원하기](https://hionpu.com/posts/Github_blog_4) 
+(4) [다국어 지원하기](https://hionpu.com/posts/github_blog_4) 
 
-(5) [사이트맵 생성하기](https://hionpu.com/posts/Github_blog_5) 
+(5) [사이트맵 생성하기](https://hionpu.com/posts/github_blog_5) 
 
 # 1. 포스트 파일명 형식과 저장 위치
 포스팅할 글은
@@ -104,4 +104,4 @@ bundle exec jekyll serve
 localhost:4000으로 이동해서 확인하고 포스팅이 올바르게 표시되면 푸시하고 자동으로 빌드, 배포된 페이지를 확인해보자.
 
 # 이어지는 글
-(4) [다국어 지원하기](https://hionpu.com/posts/Github_blog_4) 
+(4) [다국어 지원하기](https://hionpu.com/posts/github_blog_4) 

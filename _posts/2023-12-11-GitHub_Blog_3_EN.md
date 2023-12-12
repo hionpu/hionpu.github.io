@@ -9,21 +9,21 @@ categories:
 createdAt: 2023-12-11 15:54
 lastmod: 2023-12-11 15:54
 lang: en
-permalink: /posts/GitHub_Blog_3
+permalink: /posts/github_blog_3
 pin: true
 math: true
 mermaid: true
 ---
 # Series Post Links
-(1) [Creating a Repository and Testing the Page](https://hionpu.com/posts/Github_blog_1) 
+(1) [Creating a Repository and Testing the Page](https://hionpu.com/posts/github_blog_1) 
 
-(2) [Applying the Chirpy Theme](https://hionpu.com/posts/Github_blog_2)
+(2) [Applying the Chirpy Theme](https://hionpu.com/posts/github_blog_2)
 
 <font size = "5">(3) Upload a Post</font >
 
-(4) [Implementing Multilingual Support](https://hionpu.com/posts/Github_blog_4) 
+(4) [Implementing Multilingual Support](https://hionpu.com/posts/github_blog_4) 
 
-(5) [Creating a Sitemap](https://hionpu.com/posts/Github_blog_5) 
+(5) [Creating a Sitemap](https://hionpu.com/posts/github_blog_5) 
 
 # 1. Format and Location for Post Filenames
 To post an article, use the format
@@ -93,4 +93,4 @@ bundle exec jekyll serve
 Go to localhost:4000 to confirm, and if the post displays correctly, push it, then check the automatically built and deployed page.
 
 # Next Article
-(4) [Implementing Multilingual Support](https://hionpu.com/posts/Github_blog_4) 
+(4) [Implementing Multilingual Support](https://hionpu.com/posts/github_blog_4) 

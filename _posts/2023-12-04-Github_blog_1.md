@@ -10,7 +10,7 @@ tags:
 categories:
   - "[GitHub, jekyll]"
 lang: ko
-permalink: /posts/Github_blog_1
+permalink: /posts/github_blog_1
 pin: true
 math: true
 mermaid: true
@@ -26,13 +26,13 @@ mermaid: true
 ## 시리즈 포스트 링크
 <font size = "5">(1) Repository 생성과 테스트 페이지 확인하기</font>
 
-(2) [Chirpy 테마 적용](https://hionpu.com/posts/Github_blog_2) 
+(2) [Chirpy 테마 적용](https://hionpu.com/posts/github_blog_2) 
 
-(3) [포스트 올리기](https://hionpu.com/posts/Github_blog_3) 
+(3) [포스트 올리기](https://hionpu.com/posts/github_blog_3) 
 
-(4) [다국어 지원하기](https://hionpu.com/posts/Github_blog_4) 
+(4) [다국어 지원하기](https://hionpu.com/posts/github_blog_4) 
 
-(5) [사이트맵 생성하기](https://hionpu.com/posts/Github_blog_5) 
+(5) [사이트맵 생성하기](https://hionpu.com/posts/github_blog_5) 
 
 
 
@@ -77,4 +77,4 @@ git push -u origin main
 
 ***
 # 이어지는 글
-(2) [Chirpy 테마 적용](https://hionpu.com/posts/Github_blog_2) 
+(2) [Chirpy 테마 적용](https://hionpu.com/posts/github_blog_2) 

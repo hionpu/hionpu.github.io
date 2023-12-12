@@ -10,7 +10,7 @@ tags:
 categories:
   - "[GitHub, jekyll]"
 lang: en
-permalink: /posts/Github_blog_1
+permalink: /posts/github_blog_1
 pin: true
 math: true
 mermaid: true
@@ -26,15 +26,15 @@ There were times during the process when I encountered errors with no informatio
 
 # Series Post Links
 
-(1) Create a Repository and Check the Test Page
+<font size = "5">(1) Create a Repository and Check the Test Page</font>
 
-<font size = "5">(2) [Applying the Chirpy Theme](https://hionpu.com/posts/Github_blog_2)</font>
+(2) [Applying the Chirpy Theme](https://hionpu.com/posts/github_blog_2)
 
-(3) [How to Upload Posts](https://hionpu.com/posts/Github_blog_3) 
+(3) [How to Upload Posts](https://hionpu.com/posts/github_blog_3) 
 
-(4) [Make the blog supports multiple languages](https://hionpu.com/posts/Github_blog_4) 
+(4) [Make the blog supports multiple languages](https://hionpu.com/posts/github_blog_4) 
 
-(5) [Creating a Sitemap](https://hionpu.com/posts/Github_blog_5) 
+(5) [Creating a Sitemap](https://hionpu.com/posts/github_blog_5) 
 
 
 
@@ -82,5 +82,5 @@ Next, we will apply a theme.
 
 # Next Article
 
-(2) [Applying the Chirpy Theme](https://hionpu.com/posts/Github_blog_2)
+(2) [Applying the Chirpy Theme](https://hionpu.com/posts/github_blog_2)
 
