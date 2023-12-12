@@ -42,7 +42,7 @@ In this state, if the cursor is moved in the direction of increasing the angle w
 
 If the cursor is moved in the direction of decreasing the angle and crosses the ray CP, then from that point onwards, the arc drawn will have an acute angle of CPQ as its central angle.  
 
-# Analyzing the Situation
+# 2. Analyzing the Situation
 
 This can be represented in a flowchart as follows.
 
