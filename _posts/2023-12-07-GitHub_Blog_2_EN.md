@@ -10,6 +10,9 @@ lang: en
 permalink: /posts/github_blog_2
 categories:
   - "[GitHub, jekyll]"
+pin: true
+math: true
+mermaid: true
 ---
 
 ---

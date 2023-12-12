@@ -10,6 +10,9 @@ lang: ko
 permalink: /posts/github_blog_2
 categories:
   - "[GitHub, jekyll]"
+pin: true
+math: true
+mermaid: true
 ---
 # 시리즈 포스트 링크
 (1) [Repository 생성과 테스트 페이지 확인하기](https://hionpu.com/posts/github_blog_1) 
