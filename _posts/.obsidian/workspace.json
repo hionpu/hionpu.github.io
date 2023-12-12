@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-12-11-GitHub_Blog_3_EN.md",
+                "file": "2023-10-11-directional_angle_EN.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-12-11-GitHub_Blog_3_EN.md",
+                "file": "2023-10-11-directional_angle_EN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-12-11-GitHub_Blog_3_EN.md",
+                "file": "2023-10-11-directional_angle_EN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-12-11-GitHub_Blog_3_EN.md"
+                "file": "2023-10-11-directional_angle_EN.md"
               }
             }
           },
@@ -172,9 +172,10 @@
   },
   "active": "bc29ead93baa0e36",
   "lastOpenFiles": [
+    "2023-10-11-directional_angle.md",
+    "2023-12-11-GitHub_Blog_3_EN.md",
     "2023-12-07-GitHub_Blog_2_EN.md",
     "2023-12-07-GitHub_Blog_2.md",
-    "2023-12-11-GitHub_Blog_3_EN.md",
     "2023-12-11-GitHub_Blog_3.md",
     "2023-12-11-Liquid_curly_bracket.md",
     "2023-12-04-Github_blog_1.md",
@@ -199,7 +200,6 @@
     "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/polyglot 및 이후 순서.md",
     "Blogging/Async/2023-12-04-Deadlock.md",
     "Pasted image 20231204173001.png",
-    "Work/231026 Rhino 기능 - Intersect(Surface vs. Surface) 구현하기.md",
     "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지",
     "Blogging/Async/Coroutine vs. async",
     "Blogging/Async/await",

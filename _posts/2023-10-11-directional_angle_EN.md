@@ -96,7 +96,7 @@ First, let's assume the equation of line CP as $$y = mx + n$$. Now,
 
 2.  Determine if that crossing occurred on the ray CP.
 
-    ### 3-1-1. Detect if Cursor Crosses the Line
+### 3-1-1. Detect if Cursor Crosses the Line
 
     We will use the _cross product_. The direction of $\\overrightarrow{CP} \\times \\overrightarrow{CQ}$ changes depending on whether $Q$ is above or below the line CP, so tracking this direction can detect if the mouse cursor has crossed the ray. The direction can be determined by taking the dot product with the $z$ direction unit vector.
 ```
