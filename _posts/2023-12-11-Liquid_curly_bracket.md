@@ -26,4 +26,7 @@ mermaid: true
 
 ![image](https://github.com/hionpu/hionpu.github.io/assets/111286364/de9c4ac4-36c4-456a-8f15-511773299c9b)
  
- 를 사용하면 된다.
+
+&#123;% raw %}{&#123; date }} {&#123; time }}&#123;% endraw %}
+
+를 사용하면 된다.

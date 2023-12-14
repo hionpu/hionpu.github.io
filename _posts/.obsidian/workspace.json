@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "//2023-12-14-github_blog_4.md",
+                "file": "2023-12-11-Liquid_curly_bracket_EN.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "62220767798b922b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2023-12-11-Liquid_curly_bracket.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "//2023-12-14-github_blog_4.md",
+                "file": "2023-12-11-Liquid_curly_bracket_EN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "//2023-12-14-github_blog_4.md",
+                "file": "2023-12-11-Liquid_curly_bracket_EN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "//2023-12-14-github_blog_4.md"
+                "file": "2023-12-11-Liquid_curly_bracket_EN.md"
               }
             }
           },
@@ -172,12 +184,13 @@
   },
   "active": "33bcd430caa3fc4d",
   "lastOpenFiles": [
+    "2023-12-11-Liquid_curly_bracket.md",
+    "2023-12-11-Liquid_curly_bracket_EN.md",
+    "2023-12-11-GitHub_Blog_3.md",
+    "2023-12-11-GitHub_Blog_3_EN.md",
     "2023-12-14-github_blog_4_EN.md",
     "//2023-12-14-github_blog_4.md",
-    "2023-12-11-Liquid_curly_bracket.md",
     "Untitled.md",
-    "2023-12-11-GitHub_Blog_3_EN.md",
-    "2023-12-11-GitHub_Blog_3.md",
     "2023-12-14-github_blog_4.md",
     "2023-12-07-GitHub_Blog_2.md",
     "2023-12-04-Github_blog_1.md",
@@ -198,7 +211,6 @@
     "999 templates/코테 블로깅 템플릿.md",
     "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2019-08-08-text-and-typography.md",
     "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-test.md",
-    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-Deadlock.md",
     "Pasted image 20231204173001.png",
     "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지",
     "Blogging/Async/Coroutine vs. async",

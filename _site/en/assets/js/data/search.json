@@ -18,6 +18,23 @@
   },
   
   {
+    "title": "Liquid_curly_bracket_en",
+    "url": "/2023/12/11/Liquid_curly_bracket_EN.html",
+    "categories": "",
+    "tags": "#html, #liquid, #escape, #curlybracket",
+    "date": "2023-12-11 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "1. In HTML SyntaxUsing  &#38;#123; and &#38;#125;seems to be the most convenient way. The issue arises when you need to insert {{ something }} inside a code block.2. Double Curly Brackets Inside a ...",
+    "content": "1. In HTML SyntaxUsing  &#38;#123; and &#38;#125;seems to be the most convenient way. The issue arises when you need to insert {{ something }} inside a code block.2. Double Curly Brackets Inside a Code Block When .md Files are Converted to HTMLUsing{% raw %}{{ date }} {{ time }}{% endraw %}is the solution."
+  },
+  
+  {
     "title": "Liquid curly bracket 그대로 표시하기",
     "url": "/posts/liquid_curly_bracket",
     "categories": "html",
@@ -30,8 +47,8 @@
 
 
     
-    "snippet": "1. html 문법에서  &#38;#123; 와&#38;#125;를 사용하는 것이 가장 편한것 같다. 문제는 코드 블럭 안에 {{ something }} 를 넣어야 할 때이다.2. .md파일이 html로 변경될 상황에서 코드블럭 내부의 이중 curly bracket를 사용하면 된다.",
-    "content": "1. html 문법에서  &#38;#123; 와&#38;#125;를 사용하는 것이 가장 편한것 같다. 문제는 코드 블럭 안에 {{ something }} 를 넣어야 할 때이다.2. .md파일이 html로 변경될 상황에서 코드블럭 내부의 이중 curly bracket를 사용하면 된다."
+    "snippet": "1. html 문법에서  &#38;#123; 와&#38;#125;를 사용하는 것이 가장 편한것 같다. 문제는 코드 블럭 안에 {{ something }} 를 넣어야 할 때이다.2. .md파일이 html로 변경될 상황에서 코드블럭 내부의 이중 curly bracket{% raw %}{{ date }} {{ time }}{% endraw %}를 사용하면 된다.",
+    "content": "1. html 문법에서  &#38;#123; 와&#38;#125;를 사용하는 것이 가장 편한것 같다. 문제는 코드 블럭 안에 {{ something }} 를 넣어야 할 때이다.2. .md파일이 html로 변경될 상황에서 코드블럭 내부의 이중 curly bracket{% raw %}{{ date }} {{ time }}{% endraw %}를 사용하면 된다."
   },
   
   {
