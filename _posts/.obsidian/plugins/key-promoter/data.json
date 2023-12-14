@@ -23,12 +23,12 @@
     "workspace:copy-url": 3,
     "command-palette:open": 1,
     "graph:open": 2,
-    "workspace:close-window": 75,
-    "workspace:undo-close-pane": 45,
-    "workspace:close": 45,
-    "workspace:close-others": 45,
-    "workspace:close-tab-group": 45,
-    "workspace:close-others-tab-group": 45,
+    "workspace:close-window": 79,
+    "workspace:undo-close-pane": 49,
+    "workspace:close": 49,
+    "workspace:close-others": 49,
+    "workspace:close-tab-group": 49,
+    "workspace:close-others-tab-group": 49,
     "editor:open-link-in-new-leaf": 10,
     "workspace:new-tab": 10,
     "app:toggle-default-new-pane-mode": 10,
@@ -39,7 +39,7 @@
     "file-tree-alternative:reveal-active-file": 5,
     "file-tree-alternative: create-new-note": 5,
     "app:go-forward": 1,
-    "open-with-default-app:show": 23,
+    "open-with-default-app:show": 24,
     "templater-obsidian:insert-templater": 3,
     "templater-obsidian:replace-in-file-templater": 3,
     "templater-obsidian:jump-to-next-cursor-location": 3,
@@ -73,6 +73,7 @@
     "editor:insert-mathblock": 1
   },
   "keyboardStatistics": {
-    "markdown:add-metadata-property": 2
+    "markdown:add-metadata-property": 2,
+    "switcher:open": 1
   }
 }

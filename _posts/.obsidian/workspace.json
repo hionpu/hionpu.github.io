@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ee4eb598feb2bdf2",
+        "id": "21c1bb8487cc5c1d",
         "type": "tabs",
         "children": [
           {
-            "id": "bc29ead93baa0e36",
+            "id": "33bcd430caa3fc4d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-10-11-directional_angle.md",
+                "file": "//2023-12-14-github_blog_4.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-10-11-directional_angle.md",
+                "file": "//2023-12-14-github_blog_4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-10-11-directional_angle.md",
+                "file": "//2023-12-14-github_blog_4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-10-11-directional_angle.md"
+                "file": "//2023-12-14-github_blog_4.md"
               }
             }
           },
@@ -170,16 +170,20 @@
       "character-insertion:Insert / switch characters": false
     }
   },
-  "active": "bc29ead93baa0e36",
+  "active": "33bcd430caa3fc4d",
   "lastOpenFiles": [
-    "2023-10-11-directional_angle_EN.md",
-    "2023-10-11-directional_angle.md",
-    "2023-12-11-GitHub_Blog_3_EN.md",
-    "2023-12-07-GitHub_Blog_2_EN.md",
-    "2023-12-07-GitHub_Blog_2.md",
-    "2023-12-11-GitHub_Blog_3.md",
+    "2023-12-14-github_blog_4_EN.md",
+    "//2023-12-14-github_blog_4.md",
     "2023-12-11-Liquid_curly_bracket.md",
+    "Untitled.md",
+    "2023-12-11-GitHub_Blog_3_EN.md",
+    "2023-12-11-GitHub_Blog_3.md",
+    "2023-12-14-github_blog_4.md",
+    "2023-12-07-GitHub_Blog_2.md",
     "2023-12-04-Github_blog_1.md",
+    "2023-10-11-directional_angle.md",
+    "2023-10-11-directional_angle_EN.md",
+    "2023-12-07-GitHub_Blog_2_EN.md",
     "2023-12-04-Github_blog_1_EN.md",
     "//2023-12-07-GitHub_Blog_2_EN.md",
     "//2023-12-07-GitHub_Blog_2.md",
@@ -195,10 +199,6 @@
     "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2019-08-08-text-and-typography.md",
     "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-test.md",
     "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-Deadlock.md",
-    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-Deadlock_EN.md",
-    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-Jekyll_polyglot_Error.md",
-    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/2023-12-04-multithreading_vs_async-relation_or_inclusion.md",
-    "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지/polyglot 및 이후 순서.md",
     "Pasted image 20231204173001.png",
     "Blogging/Github 블로그 개설부터 Chirpy 테마 적용, 포스팅 업로드까지",
     "Blogging/Async/Coroutine vs. async",
